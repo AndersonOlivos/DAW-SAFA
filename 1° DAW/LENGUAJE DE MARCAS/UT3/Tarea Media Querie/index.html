@@ -14,47 +14,49 @@
     <main class="flex-column">
 
         <div id="container-cajas-contacto" class="flex-row">
-            <div class="cajas-contacto flex-column">
-                <img src="images/ubicacion.png" alt="Imagen">
-                <p class="cajas-contacto-title">NUESTRA OFICINA PRINCIPAL</p>
-                <p class="cajas-contacto-description">SoHo 94 Broadway St Nueva York, NY 1001</p>
+            <div id="container-caja-contacto1" class="flex-row">
+                <div class="cajas-contacto flex-column">
+                    <img src="images/ubicacion.png" alt="Imagen">
+                    <p class="cajas-contacto-title">NUESTRA OFICINA PRINCIPAL</p>
+                    <p class="cajas-contacto-description">SoHo 94 Broadway St Nueva York, NY 1001</p>
+                </div>
+                <div class="cajas-contacto flex-column">
+                    <img src="images/telefono.png" alt="Imagen">
+                    <p class="cajas-contacto-title">NUMERO DE TELEFONO</p>
+                    <p class="cajas-contacto-description">234-9876-5400</p>
+                    <p class="cajas-contacto-description">888-0123-4567 (llamada gratuita)</p>
+                </div>
             </div>
-            <div class="cajas-contacto flex-column">
-                <img src="images/telefono.png" alt="Imagen">
-                <p class="cajas-contacto-title">NUMERO DE TELEFONO</p>
-                <p class="cajas-contacto-description">234-9876-5400</p>
-                <p class="cajas-contacto-description">888-0123-4567 (llamada gratuita)</p>
-            </div>
-            <div class="cajas-contacto flex-column">
-                <img src="images/fax.png" alt="Imagen">
-                <p class="cajas-contacto-title">FAX</p>
-                <p class="cajas-contacto-description">1-234-567-8900</p>
-            </div>
-            <div class="cajas-contacto flex-column">
-                <img src="images/mail.png" alt="Imagen">
-                <p class="cajas-contacto-title">CORREO ELECTRONICO</p>
-                <p class="cajas-contacto-description">hello@theme.com</p>
+            <div id="container-caja-contacto2" class="flex-row">
+                <div class="cajas-contacto flex-column">
+                    <img src="images/fax.png" alt="Imagen">
+                    <p class="cajas-contacto-title">FAX</p>
+                    <p class="cajas-contacto-description">1-234-567-8900</p>
+                </div>
+                <div class="cajas-contacto flex-column">
+                    <img src="images/mail.png" alt="Imagen">
+                    <p class="cajas-contacto-title">CORREO ELECTRONICO</p>
+                    <p class="cajas-contacto-description">hello@theme.com</p>
+                </div>
             </div>
         </div>
         <div id="container-cajas-form-ubi" class="flex-row">
             <div id="caja-form" class="flex-column">
-                <p id="formulario-title">Datos de contacto</p>
-                <form class="flex-column" action="">
-                    <div id="div-email-nombre">
-                        <div class="flex-row">
-                            <div id="form-div-email" class="flex-column form-label">
-                                <label class="label-bold" for="correo">Email</label>
-                                <input class="form-rellenar" type="text" placeholder="Enter a valid email address">
-                            </div>
-                            <div id="form-div-nombre" class="flex-column form-label">
-                                <label class="label-bold" for="nombre">Name</label>
-                                <input class="form-rellenar" type="text" placeholder="Enter your name">
-                            </div>
+                <form class="flex-column" action="" method="post">
+                    <p id="formulario-title">Datos de contacto</p>
+                    <div id="div-email-nombre" class="flex-row">
+                        <div id="form-div-email" class="flex-column form-label">
+                            <label class="label-bold" for="form-correo">Email</label>
+                            <input id="form-correo" class="form-rellenar" type="text" placeholder="Enter a valid email address">
+                        </div>
+                        <div id="form-div-nombre" class="flex-column form-label">
+                            <label class="label-bold" for="form-nombre">Name</label>
+                            <input id="form-nombre" class="form-rellenar" type="text" placeholder="Enter your name">
                         </div>
                     </div>
                     <div class="flex-column form-label" id="div-mensaje">
-                        <label class="label-bold" for="">Message</label>
-                        <textarea class="form-rellenar" name="mensaje" placeholder="Enter your message"></textarea>
+                        <label class="label-bold" for="form-mensaje">Message</label>
+                        <textarea id="form-mensaje" class="form-rellenar" name="mensaje" placeholder="Enter your message"></textarea>
                     </div>
                     <button type="submit">ENVIAR</button>
                 </form>

@@ -1,15 +1,84 @@
-@media (min-width: 1000px) and (max-width: 1330px) {
+/*MEDIA QUERIE PARA TABLETS COMUN*/
 
-    #container-cajas-contacto{
-        width: 40%;
+@media (min-width: 650px) and (max-width: 1330px){
+
+    /*CONTENEDOR CAJAS CONTACTO*/
+
+    #container-cajas-contacto>div{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajas-contacto{
+        padding: 2rem 0.5rem 2rem 0.5rem;
+    }
+
+    .cajas-contacto-description{
+        font-size: x-small;
+    }
+
+    /*CONTENEDOR FORMULARIO Y MAPA*/
+
+    #container-cajas-form-ubi{
+        height: auto;
+        flex-direction: column;
     }
 
     #container-cajas-form-ubi>div{
-        height: 30rem;
+        width: 100%;
     }
 
+    #caja-form{
+        height: auto !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+/*MEDIA QUERIE PARA TABLETS GRANDES*/
+
+@media (min-width: 900px) and (max-width: 1330px) {
+
+    /*CAJAS CONTACTO*/
+
+    #container-cajas-contacto{
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*CAJAS FORMULARIO*/
+
+    /*FORMULARIO*/
+    
+    #container-cajas-form-ubi{
+        width: 70%;
+    }
+
+    #caja-form{
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
+
+    #formulario-title{
+        font-size: x-large;
+    }
+
+    #div-email-nombre{
+        flex-direction: row;
+    }
+
+    /*MAPA*/
     #mapa{
-        height: 30rem;
+        height: 27rem;
     }
-
 }

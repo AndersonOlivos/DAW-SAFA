@@ -1,62 +1,38 @@
-/*@media (min-width: 500px) and (max-width: 640px) {
+/*MEDIA QUERIE PARA TABLETS PEQUEÑAS*/
 
-    main{
-        width: 100%;
-        gap: 2rem;
-    }
+@media (min-width: 650px) and (max-width: 900px) {
+
+    /*CAJAS CONTACTO*/
 
     #container-cajas-contacto{
-        width: 40%;
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    #container-cajas-form-ubi>div{
-        height: 30rem;
-    }
+    /*CAJAS FORMULARIO*/
 
-    #mapa{
-        height: 30rem;
-    }
-
-    .cajas-contacto{
-        width: 100%;
-        padding: 2rem 0.5rem 2rem 0.5rem;
-    }
-
-    .cajas-contacto-description{
-        font-size: x-small;
-    }
-
+    /*FORMULARIO*/
+    
     #container-cajas-form-ubi{
         width: 100%;
-        height: auto;
-        flex-direction: column;
     }
 
     #caja-form{
-        padding: 2rem 0.25rem 2rem 0;
-    }
-
-    #container-cajas-form-ubi>div{
-        width: 100%;
-        height: auto;
-    }
-
-    form{
-        padding-left: 0.5rem;
+        padding: 4rem 0.5rem 4rem 0.5rem;
     }
 
     #formulario-title{
         font-size: large;
     }
 
-    #div-email-nombre>div{
+    #div-email-nombre{
         flex-direction: column;
     }
 
-    #container-cajas-form-ubi{
-        flex-direction: column;
-        flex-wrap: nowrap;
+    /*MAPA*/
+    #mapa{
+        height: 35rem;
     }
-
-    
 }
