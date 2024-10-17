@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    width: 100%;
+    margin: 3rem 0 3rem 0;
+}
+
+#container-cajas-contacto{
+    justify-content: space-between;
+    gap: 2rem;
+    width: 65%;
+}
+
+.cajas-contacto{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    width: 12rem;
+    height: 12rem;
+
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.cajas-contacto>img{
+    width: 3rem;
+}
+
+.cajas-contacto-title{
+    text-align: center;
+    font-weight: bold;
+
+    max-width: 70%;
+    margin-bottom: 0.5rem;
+}
+
+.cajas-contacto-description{
+    text-align: center;
+    font-size: small;
+}
+
+
+#container-cajas-form-ubi{
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 25rem;
+}
+
+#container-cajas-form-ubi>div{
+    width: 50%;
+    height: 25rem;
+}
+
+/* FORMULARIO */
+
+#caja-form{
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+form{
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 85%;
+    gap: 2rem;
+}
+
+#formulario-title{
+    width: 100%;
+    font-size: xx-large;
+    text-align: left;
+}
+
+#div-email-nombre{
+    width: 100%;
+}
+
+#div-email-nombre>div{
+    gap: 1rem;
+}
+
+.form-label{
+    gap: 0.5rem;
+}
+
+.label-bold{
+    font-weight: bold;
+}
+
+.form-label>label{
+    font-size: small;
+}
+
+.form-rellenar{
+    border: none;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+#div-mensaje{
+    width: 100%;
+}
+
+textarea{
+    height: 6rem;
+}
+
+form>button{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+
+    background-color: white;
+    color: black;
+
+    font-size: small;
+}
+
+/* MAPA */
+
+#mapa{
+    width: 100%;
+    height: 25rem;
+}

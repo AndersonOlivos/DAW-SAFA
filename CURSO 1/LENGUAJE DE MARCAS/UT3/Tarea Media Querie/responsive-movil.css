@@ -1,0 +1,49 @@
+@media (min-width: 0px) and (max-width: 800px) {
+    main{
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #container-cajas-contacto{
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cajas-contacto{
+        width: 100%;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+    }
+
+    .cajas-contacto-description{
+        font-size: x-small;
+    }
+
+    #container-cajas-form-ubi{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #caja-form{
+        padding: 2rem 0.25rem 2rem 0;
+    }
+
+    #container-cajas-form-ubi>div{
+        width: 100%;
+        height: auto;
+    }
+
+    form{
+        padding-left: 0.5rem;
+    }
+
+    #formulario-title{
+        font-size: large;
+    }
+
+    #div-email-nombre>div{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,15 @@
+@media (min-width: 1000px) and (max-width: 1330px) {
+
+    #container-cajas-contacto{
+        width: 40%;
+    }
+
+    #container-cajas-form-ubi>div{
+        height: 30rem;
+    }
+
+    #mapa{
+        height: 30rem;
+    }
+
+}
