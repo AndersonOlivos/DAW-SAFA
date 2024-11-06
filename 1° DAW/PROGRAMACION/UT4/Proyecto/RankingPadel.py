@@ -1,20 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import csv
 
-#Función para obtener la 'sopa' de la pagina
+#Función para obtener la 'sopa' de una página
 
 def obtener_soup_pagina(url):
     respuesta = requests.get(url).content
     soup = BeautifulSoup(respuesta,'html.parser')
     return soup
 
+
+
 #Función principal para realizar Web Scraping
 
-def web_scraping():
-
-    enlace_pagina = 'https://www.padelfip.com/ranking-male/'
+def web_scraping(enlace_pagina, numero_maximo_jugadores):
 
     soup_pagina = obtener_soup_pagina(enlace_pagina)
 
@@ -32,7 +31,7 @@ def web_scraping():
 
         #Se almacenarán solo 20 jugadores
 
-        if max==20: break
+        if max==numero_maximo_jugadores: break
         else: max+=1
 
         if enlace.find('img') is None:
@@ -77,12 +76,5 @@ def web_scraping():
 
     return jugadores
 
-jugadores=web_scraping()
-
-csv_file = open('jugadores_padel_masculino.csv', 'w', encoding='utf-8', newline='')
-writer = csv.writer(csv_file)
-writer.writerow(['Nombre', 'Numero', 'Pais', 'Puntos', 'Posicion', 'Pareja', 'Anyo_nacimiento', 'Altura', 'Nacido en', 'Vive en', 'Partidos jugados', 'Partidos ganados', 'Partidos perdidos', 'Victorias Consecutivas', 'Efectividad', 'Titulos', 'Foto jugador'])
-for jugador in jugadores:
-    writer.writerow(jugador.values())
-
-csv_file.close()
+jugadores_masculinos = web_scraping('https://www.padelfip.com/ranking-male/', 20)
+jugadores_femeninos = web_scraping('https://www.padelfip.com/ranking-female/', 20)
