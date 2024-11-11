@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-center{
+    align-items: center;
+}
+
+body>*{
+    width: 80%;
+}
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffa726;
+}
+
+.header-first-box{
+    width: fit-content;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icono{
+    width: 3rem;
+}
+
+h1{
+    color: rgb(39, 39, 88);
+}
+
+.header-second-box{
+    width: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.header-second-box>div{
+    flex: auto;
+}
+
+.header-a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-responsive{
+    display: none;
+}
+
+.filtro{
+    width: 100%;
+    color: #0271f2;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.text-small{
+    font-size: small;
+}
+
+.text-x-small{
+    font-size: x-small;
+}
+
+.filtro-opcion{
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.filtro-opcion-activa{
+    background-color: #0271f2;
+    color: white;
+}
+
+
+
+main{
+    width: 85%;
+    background-color: rgb(242, 242, 242);
+    padding: 0.25rem 2rem 2rem 2rem;
+    gap: 3rem;
+}
+
+nav{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.nav-categoria{
+    background-color: rgb(215, 215, 215);
+    color: #0271f2;
+    flex: auto;
+    height: fit-content;
+    padding: 0.5rem;
+    font-size: small;
+    text-align: center;
+}
+
+.nav-categoria-activa{
+    background-color: #0271f2;
+    color: white;
+    font-weight: bold;
+}
+
+.peliculas{
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pelicula{
+    width: min-content;
+    background-color: white;
+    height: auto;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    gap: 0.5rem;
+}
+
+.pelicula-titulo{
+    color: #0271f2;
+    width: 100%;
+    text-align: left;
+}
+
+.pelicula-imagen{
+    width: 100%;
+}
+
+.pelicula-descripcion{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pelicula-votacion{
+    gap: 10px;
+}
+
+.pelicula-stars{
+    width: 16px;
+    height: 16px;
+}
+
+.votos{
+    font-size: x-small;
+}
+
+.share{
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 1040px){
+    .menu-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-second-box{
+        display: none;
+    }
+}
