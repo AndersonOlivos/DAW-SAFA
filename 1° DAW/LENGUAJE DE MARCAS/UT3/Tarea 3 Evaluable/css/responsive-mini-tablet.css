@@ -1,0 +1,38 @@
+/*MEDIA QUERIE PARA TABLETS PEQUEÑAS*/
+
+@media (min-width: 650px) and (max-width: 900px) {
+
+    /*CAJAS CONTACTO*/
+
+    #container-cajas-contacto{
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*CAJAS FORMULARIO*/
+
+    /*FORMULARIO*/
+    
+    #container-cajas-form-ubi{
+        width: 100%;
+    }
+
+    #caja-form{
+        padding: 4rem 0.5rem 4rem 0.5rem;
+    }
+
+    #formulario-title{
+        font-size: large;
+    }
+
+    #div-email-nombre{
+        flex-direction: column;
+    }
+
+    /*MAPA*/
+    #mapa{
+        height: 35rem;
+    }
+}
