@@ -45,7 +45,7 @@ h1{
 }
 
 .header-second-box{
-    width: fit-content;
+    width: inherit;
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
@@ -62,6 +62,14 @@ h1{
 
 .menu-responsive{
     display: none;
+}
+
+.exit-responsive{
+    display: flex;
+    padding: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
 }
 
 .filtro{
@@ -88,6 +96,12 @@ h1{
 .filtro-opcion-activa{
     background-color: #0271f2;
     color: white;
+}
+
+.filtro-opcion:hover{
+    background-color: #257ee3b3;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 
@@ -117,6 +131,12 @@ nav{
     text-align: center;
 }
 
+.nav-categoria:hover{
+    background-color: #257ee3b3;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 .nav-categoria-activa{
     background-color: #0271f2;
     color: white;
@@ -132,26 +152,38 @@ nav{
 }
 
 .pelicula{
-    width: min-content;
+    align-items: center;
     background-color: white;
-    height: auto;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    box-shadow: 0px 2px 10px 3px #00000029;
     gap: 0.5rem;
+    height: auto;
+    justify-content: center;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    width: min-content;
+    transition: transform 0.3s ease; /* Suaviza el movimiento */
+}
+
+.pelicula:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
 }
 
 .pelicula-titulo{
     color: #0271f2;
-    width: 100%;
+    font-weight: 500;
     text-align: left;
+    width: 100%;
 }
 
 .pelicula-imagen{
-    width: 100%;
+    width: 150px;
 }
 
 .pelicula-descripcion{
+    width: 100%;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .pelicula-votacion{
@@ -164,6 +196,7 @@ nav{
 }
 
 .votos{
+    width: max-content;
     font-size: x-small;
 }
 
@@ -172,7 +205,7 @@ nav{
     height: 18px;
 }
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1200px){
     .menu-responsive{
         display: flex;
         align-items: center;
@@ -180,6 +213,73 @@ nav{
     }
 
     .header-second-box{
+        background-color: #ffa726;
+        color: white;
         display: none;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        left: 0;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+
+    .header-second-box>div{
+        flex: none;
+    }
+
+    .header-a{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 522px){
+    header{
+        align-items: center;
+        background-color: white;
+        justify-content: space-around;
+        left: 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    
+    .filtro{
+        flex-direction: column;
+    }
+
+    .peliculas{
+        justify-content: center;
+    }
+
+    .pelicula{
+        width: max-content;
+    }
+
+    .pelicula-imagen{
+        width: 100%;
+    }
+}
+
+
+.slide-in-right {
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: flex;
+}
+
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
 }
