@@ -75,6 +75,3 @@ def web_scraping(enlace_pagina, numero_maximo_jugadores):
     #Devolvemos la lista con todos los datos de los jugadores
 
     return jugadores
-
-jugadores_masculinos = web_scraping('https://www.padelfip.com/ranking-male/', 20)
-jugadores_femeninos = web_scraping('https://www.padelfip.com/ranking-female/', 20)
