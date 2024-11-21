@@ -1,0 +1,226 @@
+nav{
+    width: 100%;
+    background-color: #ffc244;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#nav-div{
+    width: 90%;
+    justify-content: space-between;
+}
+
+#nav-glovo{
+    padding-bottom: 5px;
+}
+
+#nav-buscador{
+    width: 35%;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+}
+
+#nav-buscador>img{
+    height: 16px;
+    margin-right: 6px;
+}
+
+#inp-nav-buscar{
+    font-size: normal;
+    border: 0;
+    font-weight: 600;
+    width: 45px;
+    transition: width 0.7s ease;
+}
+
+#inp-nav-buscar:focus,
+#inp-nav-buscar:not(:placeholder-shown) {
+    width: 100%;
+    outline: none;
+}
+
+#nav-empezar>button{
+    font-size: normal;
+    font-weight: 600;
+    color: rgb(250, 250, 250);
+    border: 0;
+    background-color: #00a082;
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    border-radius: 20px;
+}
+
+#nav-empezar>button:hover{
+    cursor: pointer;
+}
+
+main{
+    margin-top: 1rem;
+    min-width: 1150px;
+    width: 80%;
+}
+
+#main-enlaces{
+    gap: 2rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+#main-enlaces>a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-enlace{
+    gap: 0.5rem;
+    font-size: small;
+    padding: 0 0.75rem 0.5rem 0.75rem;
+}
+
+.main-enlaces-img{
+    width: 40px;
+}
+
+#main-supermercado{
+    border-bottom: 3px solid #ffc244;
+}
+
+#main-container-supermercado{
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+#supermercado-filter{
+    gap: 2rem;
+}
+
+#supermercado-filter>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ul-title{
+    font-weight: 700;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+#supermercado-filter>ul>li{
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.div-filter-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.grey{
+    background-color: whitesmoke;
+}
+
+.yellow{
+    background-color: #fff3da;
+}
+
+.filter-icons{
+    width: 27px;
+    height: 27px;
+}
+
+#supermercado-supermercados{
+    gap: 1.5rem;
+}
+
+#super-ubicacion{
+    font-size: small;
+}
+
+#super-ubicacion>p>span{
+    font-weight: 700;
+    color: rgb(173, 173, 173);
+    margin: 0 4px 0 4px;
+}
+
+#super-carniceria{
+    gap: 1rem;
+}
+
+#container-super{
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.super-card{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    box-shadow: 0 1px 4px rgba(66, 66, 66, 0.377);
+}
+
+.super-card:hover{
+    transform: translateY(-3px);
+}
+
+
+.super-card-img{
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+.super-card-img>img{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img-descripcion{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.342);
+    color: white;
+    gap: 0.5rem;
+}
+
+.img-title{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.img-category{
+    font-size: small;
+    padding: 5px 5px 8px 5px;
+    border-radius: 10px;
+    background-color: rgba(53, 53, 53, 0.603);
+}
+
+.super-card-descripcion{
+    margin-left: 10px;
+    width: 100%;
+    height: 20%;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+
+.card-descripcion-like{
+    width: 19px;
+    height: 19px;
+}
