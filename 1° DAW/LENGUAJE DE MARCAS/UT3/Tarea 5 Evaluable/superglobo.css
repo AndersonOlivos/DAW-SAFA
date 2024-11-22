@@ -1,0 +1,268 @@
+.btn-green{
+    color: #ffffff;
+    background-color: #00a082;
+    border: 0;
+    border-radius: 30px;
+}
+
+.no-decoration{
+    text-decoration: none;
+    color: white;
+}
+
+
+#background-nav{
+    align-items: center;
+    display: flex;
+    height: 280px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#background-nav>img{
+    filter: blur(24px);
+    width: 200%;
+}
+
+nav{
+    width: 1550px;
+    max-width: 1550px;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#btn-nav-empezar{
+    font-size: large;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    text-align: center;
+}
+
+#nav-svg{
+    height: 45px;
+    margin: 3px;
+}
+
+main{
+    margin-top: 3.5rem;
+    width: 1550px;
+    max-width: 1550px;
+    padding: 0 20px 0 20px;
+    gap: 1rem;
+}
+
+#main-ubicacion{
+    color: white;
+    justify-content: flex-start;
+}
+
+#main-ubicacion>p>span{
+    margin: 0 10px 0 10px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+#main-superglovo{
+    width: 100%;
+    border-radius: 20px;
+    gap: 1.5rem;
+}
+
+#superglovo-container{
+    width: 80%;
+}
+
+#superglovo-titulo{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 2rem 0 2rem 3rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: 0 2px 15px 2px rgba(179, 179, 179, 0.322);
+}
+
+#superglovo-titulo>div{
+    gap: 1.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.titulo-descripcion-boxes{
+    gap: 0.5rem;
+}
+
+.titulo-icon{
+    width: 35px;
+}
+
+.gratis{
+    background-color: #ffc244;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 700;
+    padding: 2px 5px 2px 5px;
+}
+
+.muy-bueno{
+    color: white;
+    background-color: #7acebc;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 700;
+    padding: 2px 5px 2px 5px;
+}
+
+#superglovo-carrito{
+    border-radius: 10px;
+    width: 20%;
+    height: min-content;
+    background-color: white;
+    box-shadow: 0 2px 15px 2px rgba(179, 179, 179, 0.322);
+}
+
+#carrito-tuglovo{
+    padding: 1.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#carrito-tuglovo>p{
+    font-size: medium;
+    max-width: 90%;
+    text-align: center;
+}
+
+#carrito-llega{
+    padding: 1.5rem;
+    border-top: 4px solid #e9f8f5;
+    font-size: 13px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+#carrito-llega>img{
+    margin-top: 2px;
+    width: 15px;
+}
+
+#superglovo-articulos{
+    margin: 2rem 0 2rem 1.5rem;
+    gap: 1rem;
+}
+
+#articulos-secciones{
+    gap: 2rem;
+}
+
+#secciones-titulo{
+    margin-left: 4px;
+    color: #00a082;
+    font-weight: 700;
+    width: min-content;
+}
+
+#articulos-secciones>ul{
+    width: 100%;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+#articulos-secciones>ul>li{
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+#articulos-secciones>ul>li:hover{
+    cursor: pointer;
+}
+
+.li-abrir{
+    justify-content: space-between;
+    gap: 3rem;
+    padding-right: 1.5rem;
+}
+
+#articulos-lomasvendido{
+    width: -webkit-fill-available;
+    gap: 2rem;
+}
+
+#lomasvendido-buscador{
+    width: 100%;
+    background-color: #e9e9e98a;
+    padding: .75rem 0 .75rem 1.25rem;
+    border-radius: 20px;
+}
+
+#lomasvendido-buscador>img{
+    width: 16px;
+    margin-right: 8px;
+}
+
+#inp_buscar_superglovo{
+    background-color: transparent;
+    width: 95%;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+#inp_buscar_superglovo::placeholder{
+    color: #a3a3a3;
+}
+
+#inp_buscar_superglovo:focus{
+    outline: none;
+}
+
+#lomasvendido-sindireccion{
+    background-color: #ffefcf;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.clicaqui{
+    text-decoration: none;
+    color: #00a082;
+    font-weight: 700;
+}
+
+#lomasvendido-cabecera{
+    justify-content: space-between;
+}
+
+#lomasvendido-icon{
+    width: 30px;
+    margin-right: 6px;
+}
+
+#lomasvendido-titulo{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.btn-grey{
+    background-color: #e9e9e98a;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.btn-grey>img{
+    width: 15px;
+    height: 15px;
+}
+
+.btn-grey:hover{
+    cursor: pointer;
+}
