@@ -88,6 +88,7 @@ main{
 
 #superglovo-titulo>div{
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -137,7 +138,7 @@ h1{
 
 #carrito-tuglovo>p{
     font-size: medium;
-    max-width: 90%;
+    max-width: 95%;
     text-align: center;
 }
 
@@ -177,6 +178,7 @@ h1{
 }
 
 #articulos-secciones>ul>li{
+    font-weight: 500;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgb(230, 230, 230);
 }
@@ -192,7 +194,7 @@ h1{
 }
 
 #articulos-lomasvendido{
-    width: -webkit-fill-available;
+    width: 80%;
     gap: 2rem;
 }
 
@@ -225,16 +227,21 @@ h1{
 }
 
 #lomasvendido-sindireccion{
+    font-size: medium;
     background-color: #ffefcf;
-    gap: 0.5rem;
     border-radius: 10px;
+    gap: 0.5rem;
     padding: 0.5rem 0 0.5rem 1rem;
 }
 
 .clicaqui{
-    text-decoration: none;
     color: #00a082;
     font-weight: 700;
+    text-decoration: none;
+}
+
+#lomasvendido{
+    gap: 2rem;
 }
 
 #lomasvendido-cabecera{
@@ -254,8 +261,8 @@ h1{
 .btn-grey{
     background-color: #e9e9e98a;
     border-radius: 50%;
-    width: 35px;
     height: 35px;
+    width: 35px;
 }
 
 .btn-grey>img{
@@ -266,3 +273,100 @@ h1{
 .btn-grey:hover{
     cursor: pointer;
 }
+
+#lomasvendido-sections{
+    overflow: auto;
+    width: 100%;
+}
+
+#lomasvendido-sections>div{
+    gap: 3rem;
+    overflow: visible;
+    width: fit-content;
+}
+
+.articulo{
+    align-items: center;
+    height: 228px;
+    justify-content: flex-start;
+    width: 150px;
+}
+
+.articulo-img{
+    width: 150px;
+    height: 150px;
+}
+
+.articulo-descripcion{
+    gap: 0.25rem;
+    width: 100%;
+}
+
+.articulo-precios{
+    gap: 0.5rem;
+}
+
+.articulo-nombre,.articulo-nuevo-precio{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.articulo-antiguo-precio{
+    font-size: small;
+    color: #a3a3a3;
+}
+
+.articulo-div-img{
+    position: relative;
+}
+
+.pack-ahorro{
+    background-color: #ffc244;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 30px;
+}
+
+.pack-ahorro>p{
+    font-size: 10px;
+    line-height: 7px;
+    text-align: center;
+}
+
+.pack-ahorro>p>span{
+    font-size: 6px;
+}
+
+.articulo-frio{
+    background-color: #47b1e2;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 30px;
+}
+
+.articulo-frio>img{
+    width: 20px;
+}
+
+.articulo-descuento{
+    background-color: #ffc244;
+    border-radius: 2px;
+    font-weight: 700;
+    height: 30px;
+    left: 0;
+    padding: 3px;
+    position: absolute;
+    top: 7px;
+    width: fit-content;
+}
+
