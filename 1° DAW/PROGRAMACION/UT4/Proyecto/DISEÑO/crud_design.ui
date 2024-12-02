@@ -217,7 +217,7 @@ background-color: rgb(24, 38, 64);
        <enum>QFrame::Raised</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="jugadores">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -900,7 +900,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_16">
                    <property name="text">
-                    <string>Partidor jugados</string>
+                    <string>Partidos jugados</string>
                    </property>
                   </widget>
                  </item>
@@ -910,7 +910,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_17">
                    <property name="text">
-                    <string>Partidor ganados</string>
+                    <string>Partidos ganados</string>
                    </property>
                   </widget>
                  </item>
@@ -920,7 +920,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_20">
                    <property name="text">
-                    <string>Partidor perdidos</string>
+                    <string>Partidos perdidos</string>
                    </property>
                   </widget>
                  </item>
