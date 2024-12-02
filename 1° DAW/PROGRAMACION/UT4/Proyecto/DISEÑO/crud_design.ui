@@ -1228,7 +1228,7 @@ border-radius: 10px;</string>
        </layout>
       </widget>
       <widget class="QWidget" name="modificar">
-       <layout class="QVBoxLayout" name="verticalLayout_22">
+       <layout class="QVBoxLayout" name="verticalLayout_22" stretch="0,0,10">
         <item>
          <widget class="QFrame" name="titulo_modificar">
           <property name="maximumSize">
@@ -1451,7 +1451,7 @@ border-radius: 10px;
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_18" stretch="10,1">
+          <layout class="QVBoxLayout" name="verticalLayout_18" stretch="10,0">
            <property name="spacing">
             <number>0</number>
            </property>
@@ -1546,7 +1546,7 @@ border-radius: 10px;
                     <string notr="true">color: rgb(24, 38, 64);
 font-size: 23px;
 font-weight: bold;
-margin-bottom: 15px;
+margin-bottom: 10px;
 padding-bottom: 5px;
 border-bottom: 2px solid  rgb(24, 38, 64);</string>
                    </property>
@@ -1558,7 +1558,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_69">
                    <property name="text">
-                    <string>Nombre</string>
+                    <string>Nombre (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1568,7 +1568,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_70">
                    <property name="text">
-                    <string>Nº ranking</string>
+                    <string>Nº ranking (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1578,7 +1578,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_71">
                    <property name="text">
-                    <string>Puntos</string>
+                    <string>Puntos (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1588,7 +1588,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_72">
                    <property name="text">
-                    <string>Posición</string>
+                    <string>Posición (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1608,7 +1608,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_74">
                    <property name="text">
-                    <string>País</string>
+                    <string>País (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1652,7 +1652,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                     <string notr="true">color: rgb(24, 38, 64);
 font-size: 23px;
 font-weight: bold;
-margin-bottom: 15px;
+margin-bottom: 10px;
 padding-bottom: 5px;
 border-bottom: 2px solid  rgb(24, 38, 64);</string>
                    </property>
@@ -1664,7 +1664,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_76">
                    <property name="text">
-                    <string>Partidor jugados</string>
+                    <string>Partidos jugados</string>
                    </property>
                   </widget>
                  </item>
@@ -1674,7 +1674,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_77">
                    <property name="text">
-                    <string>Partidor ganados</string>
+                    <string>Partidos ganados</string>
                    </property>
                   </widget>
                  </item>
@@ -1684,7 +1684,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_78">
                    <property name="text">
-                    <string>Partidor perdidos</string>
+                    <string>Partidos perdidos</string>
                    </property>
                   </widget>
                  </item>
@@ -1720,19 +1720,6 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  </item>
                  <item>
                   <widget class="QLineEdit" name="inp_modificar_titulos"/>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_4">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
                  </item>
                  <item>
                   <spacer name="verticalSpacer_8">
@@ -1781,7 +1768,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                     <string notr="true">color: rgb(24, 38, 64);
 font-size: 23px;
 font-weight: bold;
-margin-bottom: 15px;
+margin-bottom: 10px;
 padding-bottom: 5px;
 border-bottom: 2px solid  rgb(24, 38, 64);</string>
                    </property>
@@ -1793,7 +1780,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_83">
                    <property name="text">
-                    <string>Fecha nacimiento</string>
+                    <string>Fecha nacimiento (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1803,7 +1790,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_84">
                    <property name="text">
-                    <string>País nacimiento</string>
+                    <string>País nacimiento (*)</string>
                    </property>
                   </widget>
                  </item>
@@ -1843,7 +1830,7 @@ border-bottom: 2px solid  rgb(24, 38, 64);</string>
                  <item>
                   <widget class="QLabel" name="label_88">
                    <property name="text">
-                    <string>Sexo</string>
+                    <string>Sexo (*)</string>
                    </property>
                   </widget>
                  </item>
