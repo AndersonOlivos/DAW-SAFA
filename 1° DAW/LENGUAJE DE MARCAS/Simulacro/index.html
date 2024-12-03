@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Corte Inglés</title>
+
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/global.css">
+
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+
+</head>
+<body class="column v-center">
+    <header class="row v-center">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="logo">
+        </div>
+        <div class="nombre-marca">
+            <h1>El Corte Inglés</h1>
+        </div>
+        <div class="row v-center header-botones">
+            <button class="row all-center ">
+                Iniciar sesión
+            </button>
+            <button class="row all-center ">
+                <img id="img-carrito" src="imagenes/carrito.png" alt="login">
+            </button>
+        </div>
+    </header>
+
+    <main class="row">
+        <section id="contenedor-filtros" class="column h-center">
+            <h3 id="buscar-articulo">Buscar artículo</h3>
+            <div>
+                <h4>Tipo</h4>
+                <div class="div-filtros row v-center">
+                    <div>
+                        <input type="radio" name="tipo" >
+                        <label for="tipo">Camiseta</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo" >
+                        <label for="tipo">Jersey</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo" >
+                        <label for="tipo">Camisa</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo" >
+                        <label for="tipo">Vestido</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo" >
+                        <label for="tipo">Jeans</label>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div>
+                <h4>Color</h4>
+                <div class="div-filtros row v-center">
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Azul</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Amarillo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Rojo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Naranja</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Verde</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Blanco</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" >
+                        <label for="color">Negro</label>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div>
+                <h4>Marca</h4>
+                <div class="div-filtros row v-center">
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Levi's</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Tommy Hilfiger</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Adidas</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Nike</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Vans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marca" >
+                        <label for="marca">Pepe Jeans</label>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div>
+                <h4>Material</h4>
+                <div class="div-filtros row v-center">
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Algodón</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Lino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Satén</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Crochet</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Satinado</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="material" >
+                        <label for="material">Terciopelo</label>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div>
+                <h4>Talla</h4>
+                <div class="div-filtros row v-center">
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="talla">XS</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="talla">S</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="talla">M</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="talla">L</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="talla">XL</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="talla" >
+                        <label for="tipo">XXL</label>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section id="contenedor-articulos" class="column">
+
+            <!-- PRIMERA FILA -->
+            
+            <div class="row all-center">
+
+                <!-- CARD 1 -->
+
+                <div class="card column v-center">
+                    <div class="div-img-card">
+                        <img class="img-card" src="imagenes/camisa-tommy.avif" alt="camisa-tommy">
+                    </div>
+                    <div class="div-descripcion-card column">
+                        <div class="row v-center precio-und-talla-card">
+                            <div class="precio-card">
+                                <p>50,99€</p>
+                            </div>
+                            <div class="cantidad-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">1</option>
+                                    <option name="talla-card-option">2</option>
+                                    <option name="talla-card-option">3</option>
+                                    <option name="talla-card-option">4</option>
+                                    <option name="talla-card-option">5</option>
+                                    <option name="talla-card-option">6</option>
+                                </select>
+                            </div>
+                            <div class="talla-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">XS</option>
+                                    <option name="talla-card-option">S</option>
+                                    <option name="talla-card-option">M</option>
+                                    <option name="talla-card-option">L</option>
+                                    <option name="talla-card-option">XL</option>
+                                    <option name="talla-card-option">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row h-center">
+                            <button class="btn-anadir-card">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="card column v-center">
+                    <div class="div-img-card">
+                        <img class="img-card" src="imagenes/jeans-pepe.avif" alt="jeans-pepe">
+                    </div>
+                    <div class="div-descripcion-card column">
+                        <div class="row v-center precio-und-talla-card">
+                            <div class="precio-card">
+                                <p>24,99€</p>
+                            </div>
+                            <div class="cantidad-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">1</option>
+                                    <option name="talla-card-option">2</option>
+                                    <option name="talla-card-option">3</option>
+                                    <option name="talla-card-option">4</option>
+                                    <option name="talla-card-option">5</option>
+                                    <option name="talla-card-option">6</option>
+                                </select>
+                            </div>
+                            <div class="talla-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">XS</option>
+                                    <option name="talla-card-option">S</option>
+                                    <option name="talla-card-option">M</option>
+                                    <option name="talla-card-option">L</option>
+                                    <option name="talla-card-option">XL</option>
+                                    <option name="talla-card-option">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row h-center">
+                            <button class="btn-anadir-card">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGUNDA FILA -->
+
+            <div class="row all-center">
+
+                <!-- CARD 3 -->
+                
+                <div class="card column v-center">
+                    <div class="div-img-card">
+                        <img class="img-card" src="imagenes/jersey-azul.avif" alt="jersey-azul">
+                    </div>
+                    <div class="div-descripcion-card column">
+                        <div class="row v-center precio-und-talla-card">
+                            <div class="precio-card">
+                                <p>29,99€</p>
+                            </div>
+                            <div class="cantidad-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">1</option>
+                                    <option name="talla-card-option">2</option>
+                                    <option name="talla-card-option">3</option>
+                                    <option name="talla-card-option">4</option>
+                                    <option name="talla-card-option">5</option>
+                                    <option name="talla-card-option">6</option>
+                                </select>
+                            </div>
+                            <div class="talla-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">XS</option>
+                                    <option name="talla-card-option">S</option>
+                                    <option name="talla-card-option">M</option>
+                                    <option name="talla-card-option">L</option>
+                                    <option name="talla-card-option">XL</option>
+                                    <option name="talla-card-option">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row h-center">
+                            <button class="btn-anadir-card">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+
+                <div class="card column v-center">
+                    <div class="div-img-card">
+                        <img class="img-card" src="imagenes/jersey-negro.avif" alt="jersey-negro">
+                    </div>
+                    <div class="div-descripcion-card column">
+                        <div class="row v-center precio-und-talla-card">
+                            <div class="precio-card">
+                                <p>29,99€</p>
+                            </div>
+                            <div class="cantidad-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">1</option>
+                                    <option name="talla-card-option">2</option>
+                                    <option name="talla-card-option">3</option>
+                                    <option name="talla-card-option">4</option>
+                                    <option name="talla-card-option">5</option>
+                                    <option name="talla-card-option">6</option>
+                                </select>
+                            </div>
+                            <div class="talla-card">
+                                <select value="talla-card-option">
+                                    <option name="talla-card-option">XS</option>
+                                    <option name="talla-card-option">S</option>
+                                    <option name="talla-card-option">M</option>
+                                    <option name="talla-card-option">L</option>
+                                    <option name="talla-card-option">XL</option>
+                                    <option name="talla-card-option">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row h-center">
+                            <button class="btn-anadir-card">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="row v-center">
+        <div class="row all-center">
+            <h2 id="contacta">Contacta con nosotros</h2>
+        </div>
+        <div class="column all-center footer-info">
+            <p><b>Dirección: </b>C. Luis Montoto, 122-128, 41005 Sevilla</p>
+            <p><b>Email: </b>elcorteingles@gmail.com</p>
+            <p><b>Teléfono: </b>954 57 14 40</p>
+            <div class="row v-center">
+                <img src="imagenes/facebook.png" alt="facebook">
+                <img src="imagenes/instagram.png" alt="facebook">
+                <img src="imagenes/twitter.png" alt="facebook">
+            </div>
+        </div>
+        <iframe id="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.126218344304!2d-5.974117923557641!3d37.38684723441038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1d751ac777%3A0x7f88f6af7116bae9!2sEl%20Corte%20Ingl%C3%A9s%20Nervi%C3%B3n!5e0!3m2!1ses!2ses!4v1733260882116!5m2!1ses!2ses" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
