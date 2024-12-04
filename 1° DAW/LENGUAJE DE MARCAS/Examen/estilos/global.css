@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.all-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.v-center{
+    align-items: center;
+}
+
+.h-center{
+    justify-content: center;
+}
+
+.gap05{
+    gap: 0.5rem;
+}
+
+.gap1{
+    gap: 1rem;
+}
+
+.gap2{
+    gap: 2rem;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
