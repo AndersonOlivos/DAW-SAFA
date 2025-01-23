@@ -50,12 +50,16 @@ public class Almacen {
                 '}';
     }
 
+    //El 'equals' sirve para comparar 2 objetos y saber si son el mismo
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Almacen almacen = (Almacen) o;
         return Objects.equals(id, almacen.id) && Objects.equals(nombre, almacen.nombre) && Objects.equals(capacidad, almacen.capacidad);
     }
+
+    //El hashCode sirve para saber la posición en ram
 
     @Override
     public int hashCode() {
