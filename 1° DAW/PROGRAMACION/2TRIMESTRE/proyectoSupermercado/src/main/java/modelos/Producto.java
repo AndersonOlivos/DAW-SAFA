@@ -11,17 +11,17 @@ public class Producto {
     private LocalDate fechaCaducidad;
     private TipoProducto tipo;
     private Almacen almacen;
+    private Double precio;
 
-    public Producto() {
-    }
 
-    public Producto(Integer idProducto, String codigo, String descripcion, LocalDate fechaCaducidad, TipoProducto tipo, Almacen almacen) {
+    public Producto(Integer idProducto, String codigo, String descripcion, LocalDate fechaCaducidad, TipoProducto tipo, Almacen almacen, Double precio) {
         this.idProducto = idProducto;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.fechaCaducidad = fechaCaducidad;
         this.tipo = tipo;
         this.almacen = almacen;
+        this.precio = precio;
     }
 
     public Integer getIdProducto() {
@@ -72,16 +72,17 @@ public class Producto {
         this.almacen = almacen;
     }
 
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
     @Override
-    public String toString() {
-        return "Producto{" +
-                "idProducto=" + idProducto +
-                ", codigo='" + codigo + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", fechaCaducidad=" + fechaCaducidad +
-                ", tipo=" + tipo +
-                ", almacen=" + almacen +
-                '}';
+    public int hashCode() {
+        return Objects.hash(idProducto, codigo, descripcion, fechaCaducidad, tipo, almacen);
     }
 
     @Override
@@ -93,7 +94,15 @@ public class Producto {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(idProducto, codigo, descripcion, fechaCaducidad, tipo, almacen);
+    public String toString() {
+        return "Producto{" +
+                "idProducto=" + idProducto +
+                ", codigo='" + codigo + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", fechaCaducidad=" + fechaCaducidad +
+                ", tipo=" + tipo +
+                ", almacen=" + almacen +
+                ", precio=" + precio +
+                '}';
     }
 }
