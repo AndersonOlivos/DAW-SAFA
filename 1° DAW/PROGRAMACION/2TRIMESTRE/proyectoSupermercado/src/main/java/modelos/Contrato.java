@@ -55,8 +55,7 @@ public class Contrato {
     @Override
     public String toString() {
         return "Contrato{" +
-                "idContrato=" + idContrato +
-                ", salarioBase=" + salarioBase +
+                "salarioBase=" + salarioBase +
                 ", tipoContrato=" + tipoContrato +
                 '}';
     }

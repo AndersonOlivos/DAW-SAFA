@@ -66,10 +66,7 @@ public class Empresa {
     @Override
     public String toString() {
         return "Empresa{" +
-                "idContrato=" + idContrato +
-                ", codigoEmpresa='" + codigoEmpresa + '\'' +
-                ", empleados=" + empleados +
-                ", tipoEmpresa=" + tipoEmpresa +
+                "codigoEmpresa='" + codigoEmpresa + '\'' +
                 '}';
     }
 }
