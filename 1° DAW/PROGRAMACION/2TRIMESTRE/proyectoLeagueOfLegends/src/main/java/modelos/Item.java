@@ -84,13 +84,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", aumentoDanio=" + aumentoDanio +
-                ", aumentoDefensa=" + aumentoDefensa +
-                ", aumentoSalud=" + aumentoSalud +
-                ", aumentoMana=" + aumentoMana +
-                '}';
+        return nombre;
     }
 }

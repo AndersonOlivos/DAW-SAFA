@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class UtilidadesPersonaje {
 
-    public Personaje levelUp(Personaje personaje){
+    public static Personaje levelUp(Personaje personaje){
         personaje.setNivel(personaje.getNivel()+1);
         personaje.setAtaque(personaje.getAtaqueBase() + personaje.getEscalabilidad().getIncrementoDanioNivel() * personaje.getNivel());
         personaje.setDefensa(personaje.getDefensaBase() + personaje.getEscalabilidad().getIncrementoDefensaNivel() * personaje.getNivel());
@@ -19,7 +19,13 @@ public class UtilidadesPersonaje {
         return personaje;
     }
 
-    public Map<Region, List<Personaje>> getPersonajesPorRegion(List<Personaje> personajes){
+    public static void maxearPersonaje(Personaje personaje){
+        do {
+            levelUp(personaje);
+        } while( personaje.getNivel() < 18);
+    }
+
+    public static Map<Region, List<Personaje>> getPersonajesPorRegion(List<Personaje> personajes){
         Map<Region, List<Personaje>> personajesPorRegion = new HashMap<Region, List<Personaje>>();
         for(Personaje personaje : personajes){
             if(personajesPorRegion.containsKey(personaje.getRegion())){
@@ -31,17 +37,17 @@ public class UtilidadesPersonaje {
         return personajesPorRegion;
     }
 
-    public Personaje getMasPoderoso (List<Personaje> personajes){
+    public static Personaje getMasPoderoso (List<Personaje> personajes){
+
+        List<Personaje> copiaPersonajes = new ArrayList<>(personajes);
 
         Map< Personaje, Double> personajeEstadisticas = new HashMap<>();
 
-        for(Personaje personaje : personajes){
-            do {
-                personaje = levelUp(personaje);
-            } while( personaje.getNivel() < 18);
+        for(Personaje personaje : copiaPersonajes){
+            maxearPersonaje(personaje);
         }
 
-        for(Personaje personaje : personajes){
+        for(Personaje personaje : copiaPersonajes){
             Double estadistica = personaje.getAtaque() + personaje.getDefensa() + personaje.getMana() + personaje.getVida();
             personajeEstadisticas.put(personaje, estadistica);
         }
@@ -49,13 +55,16 @@ public class UtilidadesPersonaje {
         return personajeEstadisticas.entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey).orElse(null);
     }
 
-    public Map<Region, List<Personaje>> getMasPoderosoPorRegion(List<Personaje> personajes){
+    public static Map<Region, List<Personaje>> getMasPoderosoPorRegion(List<Personaje> personajes){
+
+        List<Personaje> copiaPersonajes = new ArrayList<>(personajes);
+
         Map<Region, List<Personaje>> personajesPorRegion = new HashMap<>();
         Map<Region, List<Personaje>> personajesPorRegionMasPoderoso = new HashMap<>();
 
         //CREAMOS UN MAPA CON LOS PERSONAJES POR REGIONES
 
-        for(Personaje personaje : personajes){
+        for(Personaje personaje : copiaPersonajes){
             if(personajesPorRegion.containsKey(personaje.getRegion())){
                 personajesPorRegion.get(personaje.getRegion()).add(personaje);
             } else {

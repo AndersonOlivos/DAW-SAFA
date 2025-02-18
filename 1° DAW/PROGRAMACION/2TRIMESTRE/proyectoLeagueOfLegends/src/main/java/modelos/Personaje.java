@@ -196,24 +196,6 @@ public class Personaje {
 
     @Override
     public String toString() {
-        return "Personaje{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", fechaCreacion=" + fechaCreacion +
-                ", nivel=" + nivel +
-                ", vidaBase=" + vidaBase +
-                ", manaBase=" + manaBase +
-                ", defensaBase=" + defensaBase +
-                ", defensa=" + defensa +
-                ", ataqueBase=" + ataqueBase +
-                ", ataque=" + ataque +
-                ", vida=" + vida +
-                ", mana=" + mana +
-                ", region=" + region +
-                ", habilidades=" + habilidades +
-                ", equipamiento=" + equipamiento +
-                ", escalabilidad=" + escalabilidad +
-                '}';
+        return "Personaje: " + nombre;
     }
 }
