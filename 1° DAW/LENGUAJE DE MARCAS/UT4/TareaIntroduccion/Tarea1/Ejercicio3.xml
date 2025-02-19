@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Servidores>
+    <Servidor>
+        <Idservidor></Idservidor>
+        <Ubicacion></Ubicacion>
+        <Hardware>
+            <Placa></Placa>
+            <TipoMem tplaca="ATX"></TipoMem>
+            <CantMem amp="Ghz"></CantMem>
+            <VeloMem veloc="Ghz"></VeloMem>
+            <TecnHD></TecnHD>
+            <CapacHD ahd="Tb"></CapacHD>
+            <TarjRed></TarjRed>
+        </Hardware>
+        <Marca></Marca>
+        <Uso>Diseño gráfico</Uso>
+        <Fecha_UF></Fecha_UF>
+    </Servidor>
+
+    <Servidor>
+        <Idservidor></Idservidor>
+        <Ubicacion></Ubicacion>
+        <Hardware>
+            <Placa></Placa>
+            <TipoMem tplaca="AT"></TipoMem>
+            <CantMem amp="Ghz"></CantMem>
+            <VeloMem veloc="Ghz"></VeloMem>
+            <TecnHD></TecnHD>
+            <CapacHD ahd="Tb"></CapacHD>
+            <TarjRed></TarjRed>
+        </Hardware>
+        <Marca></Marca>
+        <Uso>Correo</Uso>
+        <Fecha_UF></Fecha_UF>
+    </Servidor>
+
+    <Servidor>
+        <Idservidor></Idservidor>
+        <Ubicacion></Ubicacion>
+        <Hardware>
+            <Placa></Placa>
+            <TipoMem tplaca="AT"></TipoMem>
+            <CantMem amp="Ghz"></CantMem>
+            <VeloMem veloc="Ghz"></VeloMem>
+            <TecnHD></TecnHD>
+            <CapacHD ahd="Tb"></CapacHD>
+            <TarjRed></TarjRed>
+        </Hardware>
+        <Marca></Marca>
+        <Uso>Ofimática</Uso>
+        <Fecha_UF></Fecha_UF>
+    </Servidor>
+</Servidores>
