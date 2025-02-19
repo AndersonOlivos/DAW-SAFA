@@ -13,6 +13,8 @@ public class UtilidadesPartida {
 
     public static void inicializarPartida(Partida partida, List<Jugador> participantes, List<Personaje> personajesDisponibles){
 
+        if(participantes.size() % 2 != 0 && participantes.isEmpty() ) return;
+
         List<Personaje> listaPersonajesDisponibles = personajesDisponibles;
 
         //Mezclamos aleatoriamente la lista de personajes disponibles para realizar las elecciones
