@@ -1,0 +1,6 @@
+id,num_pokedex_pokemon,nombre,tipo,tipo_ataque,potencia
+1,1,látigo cepa,PLANTA,FÍSICO
+2,1,hoja afilada,PLANTA,ESPECIAL
+3,4,lanzallamas,FUEGO,ESPECIAL
+4,4,envite igneo,FUEGO,FÍSICO
+
