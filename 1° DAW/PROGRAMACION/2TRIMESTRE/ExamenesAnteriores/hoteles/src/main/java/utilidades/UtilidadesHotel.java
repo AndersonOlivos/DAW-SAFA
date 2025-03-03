@@ -25,6 +25,7 @@ public class UtilidadesHotel {
      * @param serviciosRequeridos
      * @return
      */
+
     public static List<Hotel> getConAlMenos3Servicios(List<Hotel> hoteles, List<ServicioHotel> serviciosRequeridos){
 
         List<Hotel> hotelesFiltrados = new ArrayList<>();
@@ -58,6 +59,7 @@ public class UtilidadesHotel {
      * @param habitaciones
      * @return
      */
+
     public static Map<TipoHabitacion,Integer> getNumReservasPorTipoHabitacion(List<Habitacion> habitaciones){
 
         Map<TipoHabitacion, Integer> mapa = new HashMap<>();
@@ -109,16 +111,9 @@ public class UtilidadesHotel {
         return mapaFinal;
     }
 
-
-
-
-    private static  boolean isBetween(LocalDate fechaReferencia, LocalDate fecha1 , LocalDate fecha2){
-        return false;
+    private static boolean isBetween(LocalDate fechaReferencia, LocalDate fecha1 , LocalDate fecha2){
+        return (fechaReferencia.isAfter(fecha1) && fechaReferencia.isBefore(fecha2));
     }
-
-
-
-
 
     /**
      * EJERCICIO 4 (1.5 puntos)
@@ -130,9 +125,18 @@ public class UtilidadesHotel {
      * @param habitacion
      * @return
      */
+
     public static boolean habitacionDisponibleFechas(LocalDate fechaInicio , LocalDate fechaFin, Habitacion habitacion){
 
-        return false;
+        Integer numeroReservas = 0;
+
+        for(Reserva reserva : habitacion.getReservas()){
+            if(isBetween(reserva.getFechaInicio(), fechaInicio , fechaFin) || isBetween(reserva.getFechaFin(), fechaInicio , fechaFin)){
+                numeroReservas++;
+            }
+        }
+
+        return numeroReservas == 0;
     }
 
 
@@ -155,10 +159,25 @@ public class UtilidadesHotel {
      * @param viajeros
      * @return
      */
-    public static Reserva realizarReserva(Hotel hotel, Habitacion habitacion,
-                                          LocalDate fechaInicio, LocalDate fechaFin, List<Viajero> viajeros){
+    public static Reserva realizarReserva(Hotel hotel, Habitacion habitacion, LocalDate fechaInicio, LocalDate fechaFin, List<Viajero> viajeros){
+    Reserva reserva = new Reserva();
+    String codigo = "CR" + reserva.hashCode();
+    reserva.setCodigo(codigo);
+    reserva.setHotel(hotel);
+    reserva.setHabitacion(habitacion);
+    reserva.setFechaInicio(fechaInicio);
+    reserva.setFechaFin(fechaFin);
+    reserva.setViajeros(viajeros);
 
-     return null;
+    Integer numeroDias = (int)ChronoUnit.DAYS.between(fechaInicio, fechaFin);
+
+    reserva.setNumDias(numeroDias);
+
+    Double precioHabitacion = hotel.getTipoHabitacionPrecio().get(habitacion.getTipoHabitacion());
+
+    reserva.setPrecioTotal(numeroDias * precioHabitacion * viajeros.size());
+
+     return reserva;
     }
 
 
@@ -173,7 +192,21 @@ public class UtilidadesHotel {
      * @return
      */
     public static boolean reservasCorrectas(List<Reserva> reservas){
-        return false;
+
+        Integer noCumpleCondiciones = 0;
+
+        for(Reserva reserva : reservas){
+            Double precioComprobacion = reserva.getHotel().getTipoHabitacionPrecio().get(reserva.getHabitacion().getTipoHabitacion())
+                    * reserva.getNumDias()
+                    * reserva.getViajeros().size();
+
+            if (!reserva.getPrecioTotal().equals(precioComprobacion) ||
+                    reserva.getHotel().getTipoHabitacionNumPersonas().get(reserva.getHabitacion().getTipoHabitacion()) < reserva.getViajeros().size() ){
+                noCumpleCondiciones++;
+            }
+        }
+
+        return noCumpleCondiciones == 0;
     }
 
 
