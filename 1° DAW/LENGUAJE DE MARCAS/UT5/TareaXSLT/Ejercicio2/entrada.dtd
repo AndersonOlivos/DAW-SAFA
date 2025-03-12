@@ -1,0 +1,11 @@
+<!ELEMENT entrada (evento)>
+<!ELEMENT evento (codigo, datos)>
+<!ATTLIST evento url_imagen_evento CDATA #REQUIRED>
+<!ATTLIST evento url_imagen_barra CDATA #REQUIRED>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT datos (nombre, fecha, lugar, ciudad, precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
