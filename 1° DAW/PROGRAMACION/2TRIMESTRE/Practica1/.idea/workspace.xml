@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="691afa4d-fad2-4b96-9988-3901e3d84b2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/ExamenClases.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/Enfrentamiento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/EnfrentamientoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/Equipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/EquipoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/PersonajeMarvel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/PersonajeMarvelImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenClases/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/ExamenUD3-AndersonOlivosGamarra.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/Practica1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/src/Punto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/src/PuntoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica1/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/PracticasJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/Fecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/FechaImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/PersonaImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/Vuelo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/Practica2/src/VueloImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/PracticasJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/ExamenPrueba/Festivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/ExamenPrueba/FestivoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/ExamenPrueba/Poblacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/ExamenPrueba/PoblacionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/ExamenPrueba/TestExamen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica1/Punto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica1/PuntoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica1/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/Fecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/FechaImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/PersonaImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/Vuelo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica2/VueloImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica3/Cancion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica3/CancionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica3/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica4/Punto3D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica4/Punto3DImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica4/Segmento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica4/SegmentoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica4/Test4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/Ataque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/AtaqueImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/Genero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/Pokedex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/PokedexImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/Pokemon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/PokemonImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava/src/Practica5/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/PracticasRefacDoc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/src/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/src/Prestamo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasRefacDoc/src/Profesor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LENGUAJE DE MARCAS/UT5/Olivos_Gamarra_Anderson.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LENGUAJE DE MARCAS/UT5/Olivos_Gamarra_Anderson.zip" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2uaXFwJ0ybtJDgYr91bI5NJq0Mz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAW-SAFA/1° DAW/PROGRAMACION/2TRIMESTRE/Practica1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="691afa4d-fad2-4b96-9988-3901e3d84b2e" name="Changes" comment="" />
+      <created>1742487559188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742487559188</updated>
+      <workItem from="1742487560944" duration="758000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

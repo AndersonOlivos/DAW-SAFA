@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package Ejercicio1Ref;
+
 import java.util.List;
 
 public class Profesor extends Persona {

@@ -1,3 +1,5 @@
+package Ejercicio1Ref;
+
 /**
  * Clase persona utilizada en profesores
  * @author Anderson
