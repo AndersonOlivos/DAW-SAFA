@@ -1,0 +1,14 @@
+.contenedor_principal{
+    -fx-background-color: lightblue;
+}
+
+.btn {
+    -fx-background-color: #2065b3;
+    -fx-text-fill: white;
+    -fx-padding: 5 20 5 20;
+    -fx-cursor: hand;
+}
+
+.btn:hover {
+    -fx-background-color: #134f91;
+}
