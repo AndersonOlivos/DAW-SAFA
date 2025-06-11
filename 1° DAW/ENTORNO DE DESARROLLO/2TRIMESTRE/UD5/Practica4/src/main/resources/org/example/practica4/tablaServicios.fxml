@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="839.0" spacing="20.0" styleClass="contenedor_principal" stylesheets="@../../../servicios.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4.TablaControlador">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="817.0" spacing="20.0" styleClass="contenedor_principal" stylesheets="@../../../servicios.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4.TablaControlador">
    <children>
       <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
@@ -37,9 +36,9 @@
           <TableColumn fx:id="col_matricula" prefWidth="113.0" text="MATRICULA" />
           <TableColumn fx:id="col_marca" prefWidth="129.0" text="MARCA" />
             <TableColumn fx:id="col_precio" prefWidth="124.0" text="PRECIO" />
-            <TableColumn fx:id="col_fecha_alquiler" prefWidth="182.0" text="FECHA ALQUILER" />
-            <TableColumn fx:id="col_fecha_entrega" prefWidth="171.0" text="FECHA ENTREGA" />
-            <TableColumn fx:id="col_total" prefWidth="119.0" text="TOTAL" />
+            <TableColumn fx:id="col_fecha_alquiler" prefWidth="146.0" text="FECHA ALQUILER" />
+            <TableColumn fx:id="col_fecha_entrega" prefWidth="163.0" text="FECHA ENTREGA" />
+            <TableColumn fx:id="col_total" prefWidth="140.0" text="TOTAL" />
         </columns>
       </TableView>
    </children>

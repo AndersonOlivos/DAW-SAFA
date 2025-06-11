@@ -17,27 +17,29 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 
 public class TablaControlador {
     @FXML
     private ComboBox<String> combo_tabla_clientes;
     @FXML
-    private TableView tabla_servicios;
+    private TableView<Servicio> tabla_servicios;
     @FXML
-    private TableColumn col_matricula;
+    private TableColumn<Servicio, String> col_matricula;
     @FXML
-    private TableColumn col_marca;
+    private TableColumn<Servicio, String> col_marca;
     @FXML
-    private TableColumn col_precio;
+    private TableColumn<Servicio, Integer> col_precio;
     @FXML
-    private TableColumn col_fecha_alquiler;
+    private TableColumn<Servicio, LocalDate> col_fecha_alquiler;
     @FXML
-    private TableColumn col_fecha_entrega;
+    private TableColumn<Servicio, LocalDate> col_fecha_entrega;
     @FXML
-    private TableColumn col_total;
+    private TableColumn<Servicio, Integer> col_total;
 
     public void initialize() {
         cargarComboboxCliente();
+        cargarTablaServicios();
     }
 
     @FXML
@@ -78,12 +80,12 @@ public class TablaControlador {
 
     public void cargarTablaServicios() {
 
-        col_matricula.setCellValueFactory(new PropertyValueFactory<>("matricula"));
-        col_marca.setCellValueFactory(new PropertyValueFactory<>("marca"));
-        col_precio.setCellValueFactory(new PropertyValueFactory<>("precio"));
-        col_fecha_alquiler.setCellValueFactory(new PropertyValueFactory<>("fechaAlquiler"));
-        col_fecha_entrega.setCellValueFactory(new PropertyValueFactory<>("fechaEntrega"));
-        col_total.setCellValueFactory(new PropertyValueFactory<>("total"));
+        col_matricula.setCellValueFactory(new PropertyValueFactory<>("matricula_vehiculo"));
+        col_marca.setCellValueFactory(new PropertyValueFactory<>("marca_vehiculo"));
+        col_precio.setCellValueFactory(new PropertyValueFactory<>("precio_vehiculo"));
+        col_fecha_alquiler.setCellValueFactory(new PropertyValueFactory<>("fecha_alquiler"));
+        col_fecha_entrega.setCellValueFactory(new PropertyValueFactory<>("fecha_entrega"));
+        col_total.setCellValueFactory(new PropertyValueFactory<>("total_servicios"));
 
         ObservableList<Servicio> listaServicios = FXCollections.observableArrayList();
 
@@ -97,16 +99,15 @@ public class TablaControlador {
                         ", servicios.fecha_alquiler" +
                         ", servicios.fecha_entrega  " +
                         "FROM servicios, vehiculos " +
-                        "WHERE servicios.");
+                        "WHERE servicios.matricula_vehiculo = vehiculos.matricula");
                 while (rs.next()) {
                     Servicio s = new Servicio(
                             rs.getString("matricula_vehiculo"),
-                            rs.getString("marca_vehiculo"),
-                            rs.getInt("precio_vehiculo"),
-                            rs.getInt("total_servicios"),
+                            rs.getString("marca"),
+                            rs.getInt("precio"),
+                            rs.getInt("Total"),
                             rs.getDate("fecha_alquiler").toLocalDate(),
                             rs.getDate("fecha_entrega").toLocalDate()
-
                     );
                     listaServicios.add(s);
                 }

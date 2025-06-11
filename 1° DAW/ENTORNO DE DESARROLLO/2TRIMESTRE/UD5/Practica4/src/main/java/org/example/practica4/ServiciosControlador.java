@@ -45,8 +45,6 @@ public class ServiciosControlador {
         detectarCambioComboboxVehiculo();
         detectarCambioComboboxCliente();
         detectarCambioDatePickers();
-
-
     }
 
     public void cargarComboboxVehiculo() {
