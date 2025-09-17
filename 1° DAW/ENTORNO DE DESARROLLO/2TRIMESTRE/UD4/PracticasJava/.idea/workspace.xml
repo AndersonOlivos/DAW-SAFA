@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="207ea191-5e51-4522-b615-d8809b392db7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Contrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Contrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/modelos/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesAlmacen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesAlmacen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesContrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesEmpresa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/2TRIMESTRE/proyectoSupermercado/src/main/java/utilidades/UtilidadesFactura.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2s29hsLjMzQpedbU1LV06CFxUtn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestExamen.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Desktop/DAW-SAFA/1° DAW/ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="207ea191-5e51-4522-b615-d8809b392db7" name="Changes" comment="" />
+      <created>1737642930368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737642930368</updated>
+      <workItem from="1737642931612" duration="551000" />
+      <workItem from="1737643935636" duration="1665000" />
+      <workItem from="1737732288448" duration="1728000" />
+      <workItem from="1738003464376" duration="47000" />
+      <workItem from="1738258390788" duration="3626000" />
+      <workItem from="1738596918249" duration="17000" />
+      <workItem from="1738838732074" duration="583000" />
+      <workItem from="1738839350558" duration="6724000" />
+      <workItem from="1739198840164" duration="182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

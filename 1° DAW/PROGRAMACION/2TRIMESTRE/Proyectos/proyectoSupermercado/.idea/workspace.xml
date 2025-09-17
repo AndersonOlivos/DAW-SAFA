@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22831297-9f1d-4f72-9163-3a9d1f0fa21c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Contrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Contrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesAlmacen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesAlmacen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesContrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesEmpresa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFactura.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2rtsee791vUEIwSeZsB3HnmU5vG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UtilidadesCliente.executor": "Run",
+    "Application.pruebaV1.executor": "Run",
+    "Application.pruebaV2.executor": "Run",
+    "Application.pruebaV4.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAW-SAFA/1° DAW/ENTORNO DE DESARROLLO/2TRIMESTRE/PracticasJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="pruebaV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pruebaV4" />
+      <module name="proyectoSupermercado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.pruebaV4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22831297-9f1d-4f72-9163-3a9d1f0fa21c" name="Changes" comment="" />
+      <created>1737389802007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737389802007</updated>
+      <workItem from="1737389803156" duration="2060000" />
+      <workItem from="1737482319621" duration="1757000" />
+      <workItem from="1737485671576" duration="623000" />
+      <workItem from="1737642380493" duration="363000" />
+      <workItem from="1737645612709" duration="4818000" />
+      <workItem from="1737719758368" duration="4462000" />
+      <workItem from="1737731681586" duration="601000" />
+      <workItem from="1738003508820" duration="212000" />
+      <workItem from="1738003728752" duration="469000" />
+      <workItem from="1738004506782" duration="1817000" />
+      <workItem from="1738007601246" duration="4097000" />
+      <workItem from="1738159756040" duration="5078000" />
+      <workItem from="1738168764003" duration="669000" />
+      <workItem from="1738172884723" duration="4473000" />
+      <workItem from="1738177491346" duration="487000" />
+      <workItem from="1738232270957" duration="3114000" />
+      <workItem from="1738235514936" duration="2461000" />
+      <workItem from="1738258357390" duration="30000" />
+      <workItem from="1738596937327" duration="190000" />
+      <workItem from="1738597567677" duration="185000" />
+      <workItem from="1738598352041" duration="846000" />
+      <workItem from="1738683132109" duration="2175000" />
+      <workItem from="1738685569294" duration="49000" />
+      <workItem from="1738685673589" duration="19000" />
+      <workItem from="1738685700201" duration="90000" />
+      <workItem from="1738685892383" duration="82000" />
+      <workItem from="1738692278540" duration="622000" />
+      <workItem from="1738766380182" duration="5320000" />
+      <workItem from="1738837698793" duration="1022000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
