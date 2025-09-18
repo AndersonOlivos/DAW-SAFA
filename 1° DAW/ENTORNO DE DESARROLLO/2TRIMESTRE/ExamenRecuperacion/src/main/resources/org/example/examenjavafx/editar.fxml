@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="516.0" prefWidth="710.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.examenjavafx.ModificarController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LA CASA DEL HOLOCRON">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@grogu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="208.0" prefWidth="199.0" spacing="20.0">
+               <children>
+                  <Label text="Autor" />
+                  <TextField fx:id="autor" />
+                  <Label text="Numero Edicion" />
+                  <TextField fx:id="numeroEdicion" />
+                  <Label text="Lugar Publicacion" />
+                  <TextField fx:id="lugarPublicacion" />
+                  <Label text="Anio Publicacion" />
+                  <DatePicker fx:id="anioPublicacion" prefHeight="31.0" prefWidth="349.0" />
+                  <Label text="Anio Edicion" />
+                  <DatePicker fx:id="anioEdicion" prefHeight="31.0" prefWidth="349.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="348.0" prefWidth="334.0" spacing="20.0">
+               <children>
+                  <Label text="Titulo" />
+                  <TextField fx:id="titulo" />
+                  <Label text="Editorial" />
+                  <TextField fx:id="editorial" />
+                  <HBox prefHeight="90.0" prefWidth="334.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="N pags" />
+                              <TextField fx:id="numeroPaginas" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Stock" />
+                              <TextField fx:id="stock" prefHeight="23.0" prefWidth="100.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="P.V.P." />
+                              <TextField fx:id="pvp" prefHeight="21.0" prefWidth="100.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="ISBN" />
+                  <TextField fx:id="isbn" />
+                  <Label text="Pasillo donde se encuentra" />
+                  <ComboBox fx:id="pasillo" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btn_guardar" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

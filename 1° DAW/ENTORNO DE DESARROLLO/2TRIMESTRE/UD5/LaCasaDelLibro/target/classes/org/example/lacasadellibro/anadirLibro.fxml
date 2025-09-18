@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="contenedor_principal" alignment="CENTER" prefHeight="502.0" prefWidth="551.0" spacing="30.0" stylesheets="@../../../styles/modal-anadir-modificar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lacasadellibro.AnadirLibroControlador">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Text fill="#0d8a52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="La Casa Del Libro">
+         <font>
+            <Font name="Bodoni MT Black" size="35.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <VBox prefHeight="350.0" prefWidth="184.0" spacing="10.0">
+               <children>
+                  <Label text="Autor" />
+                  <TextField />
+                  <Label text="Número de edición" />
+                  <TextField />
+                  <Label text="Lugar de publicación" />
+                  <TextField />
+                  <Label text="Año de publicación" />
+                  <DatePicker />
+                  <Label text="Año de edición" />
+                  <DatePicker />
+               </children>
+            </VBox>
+            <VBox prefHeight="350.0" prefWidth="171.0" spacing="10.0">
+               <children>
+                  <Label text="Título" />
+                  <TextField />
+                  <Label text="Editorial" />
+                  <TextField />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Nº Pgs" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Stock" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="P.V.P." />
+                              <TextField />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="ISBN" />
+                  <TextField />
+                  <Label text="Pasillo" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="184.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+       <Button fx:id="btn_guardar" text="Guardar">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Button>
+   </children>
+</VBox>

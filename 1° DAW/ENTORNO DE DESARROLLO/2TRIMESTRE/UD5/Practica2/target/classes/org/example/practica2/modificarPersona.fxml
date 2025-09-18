@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="347.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica2.ModificarPersonaController">
+<children>
+    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="306.0" prefWidth="244.0" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+        <children>
+            <Label text="Nombre" />
+            <TextField fx:id="inp_modificar_nombre" />
+            <Label text="Apellidos" />
+            <TextField fx:id="inp_modificar_apellidos" />
+            <Label text="Edad" />
+            <TextField fx:id="inp_modificar_edad" />
+            <Button onAction="#onHandleGuardarCambios" text="Actualizar" />
+            <Button onAction="#cerrarModal" text="Salir" />
+        </children>
+    </VBox>
+</children>
+</HBox>

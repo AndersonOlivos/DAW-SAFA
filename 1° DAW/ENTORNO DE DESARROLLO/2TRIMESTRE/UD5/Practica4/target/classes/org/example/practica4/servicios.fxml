@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="877.0" spacing="40.0" styleClass="contenedor_principal" stylesheets="@../../../servicios.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4.ServiciosControlador">
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="62.0" prefWidth="176.0" spacing="10.0">
+               <children>
+                  <Label text="Fecha alquiler" />
+                  <DatePicker fx:id="inp_fecha_alquiler" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="62.0" prefWidth="177.0" spacing="10.0">
+               <children>
+                  <Label text="Fecha entrega" />
+                  <DatePicker fx:id="inp_fecha_entrega" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="62.0" prefWidth="152.0" spacing="10.0">
+               <children>
+                  <Label text="Vehículo" />
+                  <ComboBox fx:id="combo_vehiculo" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="62.0" prefWidth="152.0" spacing="10.0">
+               <children>
+                  <Label text="Cliente" />
+                  <ComboBox fx:id="combo_cliente" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="142.0" prefWidth="676.0">
+         <children>
+            <VBox prefHeight="154.0" prefWidth="356.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="DESCRIPCION" />
+                        <TextField fx:id="inp_descripcion" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="MARCA" />
+                        <TextField fx:id="inp_marca" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="KILÓMETROS" />
+                        <TextField fx:id="inp_km" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="PRECIO" />
+                        <TextField fx:id="inp_precio" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="108.0" prefWidth="338.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="NIF" />
+                        <TextField fx:id="inp_nif" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="DIRECCION" />
+                        <TextField fx:id="inp_direccion" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="100.0" text="POBLACION" />
+                        <TextField fx:id="inp_poblacion" />
+                     </children>
+                  </HBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="TOTAL SERVICIO" />
+            <TextField fx:id="inp_total_servicio" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btn_grabar" mnemonicParsing="false" onAction="#grabarServicio" styleClass="btn" text="Grabar" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
