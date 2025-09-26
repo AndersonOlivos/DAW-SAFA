@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>Potencias</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+      <input
+        style="width: fit-content"
+        id="base"
+        type="text"
+        placeholder="Numero base"
+      />
+      <input
+        style="width: fit-content"
+        id="exponente"
+        type="text"
+        placeholder="Exponente"
+      />
+      <button style="width: fit-content" onclick="calcular()">Calcular</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      let calcular = () => {
+        let base = Number(document.getElementById("base").value);
+        let exponente = parseInt(document.getElementById("exponente").value);
+
+        if (exponente == 0) {
+          document.getElementById("resultado").innerText = "1";
+        } else {
+          let res = base;
+          for(let i=1;i<exponente;i++){
+            res = res * base;
+          }
+          document.getElementById("resultado").innerText =
+            "Resultado: " + res;
+        }
+      };
+    </script>
+  </body>
+</html>
