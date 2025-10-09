@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(22, 77, 129);
+}
+
+input{
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+button{
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(22, 77, 129);
+    color: white;
+    cursor: pointer;
+}
+
+.div-ejercicio{
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    margin: 2rem;
+    min-width: 400px;
+    width: fit-content;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 1.5rem;
+    text-align: left;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Evaluable</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 1</h1>
+        <p>Introduce una frase</p>
+        <input type="text" id="inpEjercicio1">
+        <button onclick="ejercicio1()">Ejecutar</button>
+        <p id="aviso1"></p>
+    </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 2</h1>
+        <p>Inserta 7 palabras variadas (separadas por ",")</p>
+        <input type="text" id="inp1Ejercicio2">
+        <p>Introduce una palabra para comprobar si está dentro</p>
+        <input type="text" id="inp2Ejercicio2">
+        <button onclick="ejercicio2()">Ejecutar</button>
+        <p id="aviso2"></p>
+    </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 3</h1>
+        <p>Introduce el nombre de un estudiante</p>
+        <input type="text" id="inp1Ejercicio3">
+        <button onclick="ejercicio3()">Buscar</button>
+        <p id="aviso3"></p>
+        <table id="mostrar_alumnos">
+            <thead>
+                <tr>
+                <th>Alumno</th>
+                <th>Nota</th>
+            </tr>
+            </thead>
+            <tbody id="body-alumnos">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 4</h1>
+        <button onclick="ejercicio4()">Ejecutar</button>
+        <p>Mirar el log para ver el resultado</p>
+    </div>
+    <script src="ejercicios.js"></script>
+</body>
+
+</html>
