@@ -241,3 +241,63 @@ const ejercicio4 = () => {
     const stringExclusion = [...exclusion].join(', ');
     console.log(`%c${stringExclusion}`, 'color: green; font-weight: bold;');
 }
+
+const ejercicio5 = () => {
+  const numeros = document.getElementById("inp1Ejercicio5").value;
+  const aviso = document.getElementById("aviso5");
+
+  const numerosArray = numeros.split(",");
+  let todosNumeros = true;
+  const correctosSet = new Set();
+  
+  for(const numero of numerosArray){
+      
+    let transformado = parseInt(numero)
+
+    if(isNaN(transformado)){
+      todosNumeros=false;
+      break;
+    } else {
+      correctosSet.add(transformado)
+    }
+  }
+
+  if(todosNumeros){
+    aviso.innerHTML="<p><b>Numeros:</b> " + [...correctosSet].join(', ') + "</p>";
+
+    let media = 0;
+    for(const numeros of correctosSet){
+      media += numeros;
+    }
+    media = media / correctosSet.size;
+
+    aviso.innerHTML += "<p><b>Media:</b> " + media + "</p>";
+
+  } else {
+    aviso.innerHTML="<p style='color: red'><b>Error:</b> introduce solo valores numéricos.</p>"
+  }
+
+}
+
+const ejercicio6 = () =>{
+
+  const texto = document.getElementById("inp1Ejercicio6").value;
+  const aviso = document.getElementById("aviso6");
+
+
+  const textoSinEspacios = texto.replaceAll(" ","")
+  const textoArray = textoSinEspacios.split("");
+  const textoInvArray = new Array();
+
+  for(let i=textoArray.length-1;i>=0;i--){
+    textoInvArray.push(textoArray[i])
+  }
+
+  const textoInv = [...textoInvArray].join("")
+
+  if(textoSinEspacios.localeCompare(textoInv, "es", {sensitivity: 'base'}) === 0){
+    aviso.innerText = "SON PALINDROMOS";
+  } else{
+    aviso.innerText = "NO SON PALINDROMOS";
+  }
+}

@@ -1,9 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 h1{
-    color: rgb(22, 77, 129);
+    color: #164d81;
 }
 
 input{
@@ -38,4 +41,90 @@ table{
     border-collapse: separate;
     border-spacing: 1.5rem;
     text-align: left;
+}
+
+.boton-filtro{
+    background-color: #859a9e;
+}
+
+.boton-filtro:hover{
+    background-color: #75898d;
+}
+
+.boton-activo{
+    background-color: #164d81;
+}
+
+.boton-activo:hover{
+    background-color: #164d81;
+}
+
+.card-tarea{
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+
+.card-tarea.pendiente{
+    color: orange;
+    background-color: #f1e2b6;
+}
+
+.card-tarea.completado{
+    color: white;
+    background-color: #57b867;
+}
+
+.nombre-tarea{
+    font-size: large;
+    font-weight: 700;
+}
+
+
+.boton-completado{
+    background-color: #5cb986;
+}
+
+.boton-completado:hover{
+    background-color: #47a571;
+}
+
+.boton-eliminar{
+    background-color: salmon;
+}
+
+.boton-eliminar:hover{
+    background-color: rgb(219, 102, 89);
+}
+
+.acciones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.estado-tarea{
+    margin: 0;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    font-size: small;
+}
+
+.estado-tarea.pendiente{
+    background-color: rgb(230, 185, 149);
+    color: rgb(121, 73, 19);
+
+}
+
+.estado-tarea.completado{
+        background-color: rgb(141, 226, 169);
+        color: green;
+
+}
+
+.img-acciones{
+    width: 18px;
 }

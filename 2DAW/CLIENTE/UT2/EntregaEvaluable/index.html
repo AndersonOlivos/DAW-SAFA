@@ -48,6 +48,53 @@
         <button onclick="ejercicio4()">Ejecutar</button>
         <p>Mirar el log para ver el resultado</p>
     </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 5</h1>
+        <p>Inserta números (separadas por ",")</p>
+        <input type="text" id="inp1Ejercicio5">
+        <button onclick="ejercicio5()">Ejecutar</button>
+        <div id="aviso5"></div>
+    </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 6</h1>
+        <p>Introduce una frase o palabra</p>
+        <input type="text" id="inp1Ejercicio6">
+        <button onclick="ejercicio6()">Comprobar palíndromo</button>
+        <p id="aviso6"></p>
+    </div>
+    <div class="div-ejercicio">
+        <h1>Ejercicio 7</h1>
+        <p>Introduce una tarea</p>
+        <input type="text" id="inp1Ejercicio7" placeholder="Comprar pan...">
+        <button onclick="ejercicio7()">Añadir</button>
+        <p id="aviso7"></p>
+        <div>
+            <button class="boton-filtro boton-activo">Todas</button>
+            <button class="boton-filtro">Completadas</button>
+            <button class="boton-filtro">Pendientes</button>
+        </div>
+        <div id="tareas">
+            <div class="card-tarea pendiente">
+                <p class="nombre-tarea">Comprar pan</p>
+                <div class="acciones">
+                    <p class="estado-tarea pendiente">Pendiente</p>
+                    <div>
+                        <button class="boton-completado"><img class="img-acciones" src="./img/done.png" alt=""></button>
+                        <button class="boton-eliminar" onclick="eliminar(1)"><img class="img-acciones" src="./img/basura.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-tarea completado">
+                <p class="nombre-tarea">Comprar maria</p>
+                <div class="acciones">
+                    <p class="estado-tarea completado">Completado</p>
+                    <div>
+                        <button class="boton-eliminar" onclick="eliminar(1)"><img class="img-acciones" src="./img/basura.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="ejercicios.js"></script>
 </body>
 

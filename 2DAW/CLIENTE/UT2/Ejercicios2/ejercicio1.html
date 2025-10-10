@@ -3,6 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Ejercicio de Números</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    input {
+      margin: 5px;
+      padding: 5px;
+      width: 60px;
+      text-align: center;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 15px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <h2>Introduce 10 números</h2>
@@ -14,7 +34,6 @@
   <div id="resultado"></div>
   
   <script>
-    // Crear 10 inputs para los números
     const inputsDiv = document.getElementById("inputs");
     for (let i = 0; i < 10; i++) {
       let input = document.createElement("input");
@@ -26,19 +45,16 @@
     function calcular() {
       let numeros = [];
       
-      // Recoger los valores de los inputs
       for (let i = 0; i < 10; i++) {
         let valor = document.getElementById("num" + i).value;
         numeros.push(Number(valor));
       }
       
-      // Calcular mayor, menor y media
       let mayor = Math.max(...numeros);
       let menor = Math.min(...numeros);
       let suma = numeros.reduce((acc, num) => acc + num, 0);
       let media = suma / numeros.length;
       
-      // Mostrar resultados
       document.getElementById("resultado").innerHTML = `
         Mayor: ${mayor} <br>
         Menor: ${menor} <br>
