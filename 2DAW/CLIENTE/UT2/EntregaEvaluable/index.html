@@ -69,9 +69,9 @@
         <button onclick="ejercicio7()">Añadir</button>
         <p id="aviso7"></p>
         <div>
-            <button class="boton-filtro boton-activo">Todas</button>
-            <button class="boton-filtro">Completadas</button>
-            <button class="boton-filtro">Pendientes</button>
+            <button id="boton-todas" class="boton-filtro boton-activo" onclick="actualizar_ventana('Todas')">Todas</button>
+            <button id="boton-completadas" class="boton-filtro" onclick="actualizar_ventana('Completadas')">Completadas</button>
+            <button id="boton-pendientes" class="boton-filtro" onclick="actualizar_ventana('Pendientes')">Pendientes</button>
         </div>
         <div id="tareas">
             <div class="card-tarea pendiente">

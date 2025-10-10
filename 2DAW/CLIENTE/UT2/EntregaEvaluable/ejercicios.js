@@ -134,10 +134,14 @@ const ejercicio3 = () => {
   if (existe != undefined) {
     aviso.innerHTML = `<b>Nota de ${alumnos[existe].nombre}:</b> ${alumnos[existe].nota}`;
   } else {
-
     let notaNueva = undefined;
 
-    while (notaNueva < 0 || notaNueva > 10 || notaNueva === undefined || notaNueva === null) {
+    while (
+      notaNueva < 0 ||
+      notaNueva > 10 ||
+      notaNueva === undefined ||
+      notaNueva === null
+    ) {
       let input = prompt(
         "Este usuario no existe. Indica una nota (0-10) para añadirlo."
       );
@@ -196,51 +200,56 @@ const mostrar_alumnos = () => {
 mostrar_alumnos();
 
 const ejercicio4 = () => {
+  let multiplosDos = new Set();
+  let multiplosTres = new Set();
 
-    let multiplosDos = new Set;
-    let multiplosTres = new Set;
-
-    for(let i=0;i<=30;i++){
-        if(i%2==0){multiplosDos.add(i)}
-        if(i%3==0){multiplosTres.add(i)}
+  for (let i = 0; i <= 30; i++) {
+    if (i % 2 == 0) {
+      multiplosDos.add(i);
     }
-
-    let union = multiplosDos.add(...multiplosTres)
-
-    const stringUnion = [...union].join(', ');
-    console.log(`%c${stringUnion}`, 'color: violet; font-weight: bold;');
-
-    let interseccion = new Set;
-
-    for(const valor of multiplosDos){
-        if(multiplosTres.has(valor)){interseccion.add(valor)}
+    if (i % 3 == 0) {
+      multiplosTres.add(i);
     }
+  }
 
-    const stringInterseccion = [...interseccion].join(', ');
-    console.log(`%c${stringInterseccion}`, 'color: purple; font-weight: bold;');
-    
-    let diferenciaDos = new Set(multiplosDos);
+  let union = multiplosDos.add(...multiplosTres);
 
-    for(const valores of interseccion){
-        diferenciaDos.delete(valores)
+  const stringUnion = [...union].join(", ");
+  console.log(`%c${stringUnion}`, "color: violet; font-weight: bold;");
+
+  let interseccion = new Set();
+
+  for (const valor of multiplosDos) {
+    if (multiplosTres.has(valor)) {
+      interseccion.add(valor);
     }
+  }
 
-    const stringDiferenciaDos = [...diferenciaDos].join(', ');
-    console.log(`%c${stringDiferenciaDos}`, 'color: blue; font-weight: bold;');
+  const stringInterseccion = [...interseccion].join(", ");
+  console.log(`%c${stringInterseccion}`, "color: purple; font-weight: bold;");
 
-    let diferenciaTres = new Set(multiplosTres);
+  let diferenciaDos = new Set(multiplosDos);
 
-    for(const valores of interseccion){
-        diferenciaTres.delete(valores)
-    }
-    
-    const stringDiferenciaTres = [...diferenciaTres].join(', ');
-    console.log(`%c${stringDiferenciaTres}`, 'color: pink; font-weight: bold;');
+  for (const valores of interseccion) {
+    diferenciaDos.delete(valores);
+  }
 
-    let exclusion = diferenciaDos.add(...diferenciaTres);
-    const stringExclusion = [...exclusion].join(', ');
-    console.log(`%c${stringExclusion}`, 'color: green; font-weight: bold;');
-}
+  const stringDiferenciaDos = [...diferenciaDos].join(", ");
+  console.log(`%c${stringDiferenciaDos}`, "color: blue; font-weight: bold;");
+
+  let diferenciaTres = new Set(multiplosTres);
+
+  for (const valores of interseccion) {
+    diferenciaTres.delete(valores);
+  }
+
+  const stringDiferenciaTres = [...diferenciaTres].join(", ");
+  console.log(`%c${stringDiferenciaTres}`, "color: pink; font-weight: bold;");
+
+  let exclusion = diferenciaDos.add(...diferenciaTres);
+  const stringExclusion = [...exclusion].join(", ");
+  console.log(`%c${stringExclusion}`, "color: green; font-weight: bold;");
+};
 
 const ejercicio5 = () => {
   const numeros = document.getElementById("inp1Ejercicio5").value;
@@ -249,55 +258,241 @@ const ejercicio5 = () => {
   const numerosArray = numeros.split(",");
   let todosNumeros = true;
   const correctosSet = new Set();
-  
-  for(const numero of numerosArray){
-      
-    let transformado = parseInt(numero)
 
-    if(isNaN(transformado)){
-      todosNumeros=false;
+  for (const numero of numerosArray) {
+    let transformado = parseInt(numero);
+
+    if (isNaN(transformado)) {
+      todosNumeros = false;
       break;
     } else {
-      correctosSet.add(transformado)
+      correctosSet.add(transformado);
     }
   }
 
-  if(todosNumeros){
-    aviso.innerHTML="<p><b>Numeros:</b> " + [...correctosSet].join(', ') + "</p>";
+  if (todosNumeros) {
+    aviso.innerHTML =
+      "<p><b>Numeros:</b> " + [...correctosSet].join(", ") + "</p>";
 
     let media = 0;
-    for(const numeros of correctosSet){
+    for (const numeros of correctosSet) {
       media += numeros;
     }
     media = media / correctosSet.size;
 
     aviso.innerHTML += "<p><b>Media:</b> " + media + "</p>";
-
   } else {
-    aviso.innerHTML="<p style='color: red'><b>Error:</b> introduce solo valores numéricos.</p>"
+    aviso.innerHTML =
+      "<p style='color: red'><b>Error:</b> introduce solo valores numéricos.</p>";
   }
+};
 
-}
-
-const ejercicio6 = () =>{
-
+const ejercicio6 = () => {
   const texto = document.getElementById("inp1Ejercicio6").value;
   const aviso = document.getElementById("aviso6");
 
-
-  const textoSinEspacios = texto.replaceAll(" ","")
+  const textoSinEspacios = texto.replaceAll(" ", "");
   const textoArray = textoSinEspacios.split("");
   const textoInvArray = new Array();
 
-  for(let i=textoArray.length-1;i>=0;i--){
-    textoInvArray.push(textoArray[i])
+  for (let i = textoArray.length - 1; i >= 0; i--) {
+    textoInvArray.push(textoArray[i]);
   }
 
-  const textoInv = [...textoInvArray].join("")
+  const textoInv = [...textoInvArray].join("");
 
-  if(textoSinEspacios.localeCompare(textoInv, "es", {sensitivity: 'base'}) === 0){
+  if (
+    textoSinEspacios.localeCompare(textoInv, "es", { sensitivity: "base" }) ===
+    0
+  ) {
     aviso.innerText = "SON PALINDROMOS";
-  } else{
+  } else {
     aviso.innerText = "NO SON PALINDROMOS";
   }
-}
+};
+
+/* EJERCICIO 7 */
+
+let tareas = [
+  {
+    nombre: "Comprar galletas",
+    estado: "pendiente",
+  },
+];
+
+let estadoVentana = "Todas";
+
+const ejercicio7 = () => {
+  const tareaNombre = document.getElementById("inp1Ejercicio7").value;
+  const aviso = document.getElementById("aviso7");
+  let existe = false;
+  
+  for(const tarea of tareas){
+    if(tarea.nombre.localeCompare(tareaNombre, "es", {sensitivity: "base"})===0){
+      existe=true;
+      break;
+    }
+  }
+
+  if(existe==false){
+    aviso.innerText="";
+    const tarea = {
+    nombre: tareaNombre,
+    estado: "pendiente",
+  };
+
+  tareas.push(tarea);
+  actualizar_ventana(estadoVentana);
+  } else {
+    aviso.innerText="Esta tarea ya existe. ¡Prueba con otra!"
+  }
+
+};
+
+const actualizar_ventana = (estado) => {
+  const botonTodas = document.getElementById("boton-todas");
+  const botonCompletadas = document.getElementById("boton-completadas");
+  const botonPendientes = document.getElementById("boton-pendientes");
+
+  botonTodas.classList.remove("boton-activo");
+  botonCompletadas.classList.remove("boton-activo");
+  botonPendientes.classList.remove("boton-activo");
+
+  if (estado == "Todas") {
+    botonTodas.classList.add("boton-activo");
+    estadoVentana = estado;
+    mostrar_todas_tareas();
+  } else {
+    if (estado == "Completadas") {
+      botonCompletadas.classList.add("boton-activo");
+      console.log(botonCompletadas);
+      estadoVentana = estado;
+      mostrar_completadas_tareas();
+    } else {
+      botonPendientes.classList.add("boton-activo");
+      mostrar_pendientes_tareas();
+      estadoVentana = estado;
+    }
+  }
+};
+
+const mostrar_todas_tareas = () => {
+  const divTareas = document.getElementById("tareas");
+  divTareas.innerHTML = "";
+  let contenido = "";
+  for (const i in tareas) {
+    if (tareas[i].estado == "pendiente") {
+      contenido +=
+        "<div class='card-tarea pendiente'>" +
+        "<p class='nombre-tarea'>" +
+        tareas[i].nombre +
+        "</p>" +
+        "<div class='acciones'>" +
+        "<p class='estado-tarea pendiente'>" +
+        tareas[i].estado.toUpperCase() +
+        "</p>" +
+        "<div>" +
+        "<button class='boton-completado' onclick='completado(" +
+        i +
+        ")'><img class='img-acciones' src='./img/done.png' alt=''></button>" +
+        "<button class='boton-eliminar' onclick='eliminar(" +
+        i +
+        ")'><img class='img-acciones' src='./img/basura.png' alt=''></button>" +
+        "</div>" +
+        "</div>" +
+        "</div>";
+    } else {
+      contenido +=
+        "<div class='card-tarea completado'>" +
+        "<p class='nombre-tarea'>" +
+        tareas[i].nombre +
+        "</p>" +
+        "<div class='acciones'>" +
+        "<p class='estado-tarea completado'>" +
+        tareas[i].estado.toUpperCase() +
+        "</p>" +
+        "<div>" +
+        "<button class='boton-eliminar' onclick='eliminar(" +
+        i +
+        ")'><img class='img-acciones' src='./img/basura.png' alt=''></button>" +
+        "</div>" +
+        "</div>" +
+        "</div>";
+    }
+  }
+  divTareas.innerHTML = contenido;
+};
+
+const mostrar_completadas_tareas = () => {
+  const divTareas = document.getElementById("tareas");
+  divTareas.innerHTML = "";
+  let contenido = "";
+  for (const i in tareas) {
+    if (tareas[i].estado == "completado") {
+      {
+        contenido +=
+          "<div class='card-tarea completado'>" +
+          "<p class='nombre-tarea'>" +
+          tareas[i].nombre +
+          "</p>" +
+          "<div class='acciones'>" +
+          "<p class='estado-tarea completado'>" +
+          tareas[i].estado.toUpperCase() +
+          "</p>" +
+          "<div>" +
+          "<button class='boton-eliminar' onclick='eliminar(" +
+          i +
+          ")'><img class='img-acciones' src='./img/basura.png' alt=''></button>" +
+          "</div>" +
+          "</div>" +
+          "</div>";
+      }
+      divTareas.innerHTML = contenido;
+    }
+  }
+};
+
+const mostrar_pendientes_tareas = () => {
+  const divTareas = document.getElementById("tareas");
+  divTareas.innerHTML = "";
+  let contenido = "";
+  for (const i in tareas) {
+    if (tareas[i].estado == "pendiente") {
+      {
+        contenido +=
+          "<div class='card-tarea pendiente'>" +
+          "<p class='nombre-tarea'>" +
+          tareas[i].nombre +
+          "</p>" +
+          "<div class='acciones'>" +
+          "<p class='estado-tarea pendiente'>" +
+          tareas[i].estado.toUpperCase() +
+          "</p>" +
+          "<div>" +
+          "<button class='boton-completado' onclick='completado(" +
+          i +
+          ")'><img class='img-acciones' src='./img/done.png' alt=''></button>" +
+          "<button class='boton-eliminar' onclick='eliminar(" +
+          i +
+          ")'><img class='img-acciones' src='./img/basura.png' alt=''></button>" +
+          "</div>" +
+          "</div>" +
+          "</div>";
+      }
+      divTareas.innerHTML = contenido;
+    }
+  }
+};
+
+const eliminar = (id) => {
+  tareas.pop(id);
+  actualizar_ventana(estadoVentana);
+};
+
+const completado = (id) => {
+  tareas[id].estado = "completado";
+  console.log(tareas[id].estado);
+  actualizar_ventana(estadoVentana);
+};
+
+actualizar_ventana("Todas");
