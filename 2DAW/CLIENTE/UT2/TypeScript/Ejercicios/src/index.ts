@@ -267,3 +267,151 @@ function filtrar_categoria(cat:string):void{
 let tamano:string = 'pequeño';
 let categoria:string = 'mamífero';
 mostrar_animales_filtrados(tamano, categoria);
+
+//EJERCICIO 10
+
+interface Cliente{
+    nombre: string;
+    direccion: string;
+    correo: string;
+    toString():string;
+}
+
+class ImplCliente implements Cliente{
+    nombre: string;
+    direccion: string;
+    correo: string;
+
+    constructor(nombre:string, direccion:string, correo:string) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.correo = correo;
+    }
+
+    toString():string{
+        return `Cliente ${this.nombre} (${this.correo})`;
+    }
+}
+
+type CategoriaProducto = "alimentación" | "ocio" | "hogar" | "higiene personal" | "textil y calzado";
+
+interface Producto11{
+    nombre: string;
+    categoria: CategoriaProducto;
+    cantidad: number;
+    precioUnitario: number;
+    toString():string;
+}
+
+class ImplProducto11 implements Producto11{
+    nombre: string;
+    categoria: CategoriaProducto;
+    cantidad: number;
+    precioUnitario: number;
+
+    constructor(nombre: string, categoria: CategoriaProducto, cantidad: number, precioUnitario:number) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.cantidad = cantidad;
+        this.precioUnitario = cantidad;
+    }
+
+    toString():string{
+        return `${this.nombre}(${this.cantidad} x ${this.precioUnitario}€)`;
+    }
+}
+
+interface Pedido{
+    cliente: Cliente;
+    productos: Producto11[];
+    fecha: number;
+    toString():string;
+}
+
+class ImplPedido implements Pedido{
+    cliente: Cliente;
+    productos: Producto11[];
+    fecha: number;
+
+    constructor(cliente: Cliente, productos: Producto11[], fecha: number) {
+        this.cliente = cliente;
+        this.productos = productos;
+        this.fecha = fecha;
+    }
+
+    toString():string{
+        return `Pedido de ${this.cliente.toString()}. Contiene: ${this.productos.map(p => p.toString()).join(', ')}`;
+    }
+}
+
+let clienteEjercicio10: Cliente = new ImplCliente("Anderson", "Plaza Espana N1", "anderolivosg@gmail.com");
+let productoEjercicio101:Producto11 = new ImplProducto11("Raton", "ocio", 3, 20.2)
+let productoEjercicio102:Producto11 = new ImplProducto11("Teclado", "ocio", 2, 60.8)
+let pedido10:Pedido = new ImplPedido(clienteEjercicio10, [productoEjercicio101, productoEjercicio102], Date.now())
+
+console.log(pedido10.toString());
+
+//EJERCICIO 11
+
+type Region = "Kanto" | "Johto" | "Hoenn" | "Sinnoh" | "Teselia" | "Kalos" | "Alola" | "Galar" | "Paldea"
+
+type TipoPokemon =  "normal" | "fuego" | "planta" | "agua" |
+    "eléctrico" | "tierra" | "roca" | "veneno" | "hielo" | "acero" | "lucha" | "volador" |
+"fantasma" | "bicho" | "psíquico" | "hada" | "siniestro" | "dragón"
+
+interface Pokemon {
+    especie: string;
+    apodo: string;
+    tipo1: TipoPokemon;
+    tipo2: TipoPokemon;
+    toString():string
+}
+
+class ImplPokemon implements Pokemon {
+    especie: string;
+    apodo: string;
+    tipo1: TipoPokemon;
+    tipo2: TipoPokemon;
+
+    constructor(especie:string, apodo:string, tipo1:TipoPokemon, tipo2:TipoPokemon) {
+        if (apodo == ""){
+            this.apodo = especie;
+        } else {
+            this.apodo = apodo;
+        }
+
+        this.especie = especie;
+        this.tipo1 = tipo1;
+        this.tipo2 = tipo2;
+    }
+
+    toString():string{
+        return "Pokemon " + this.especie;
+    }
+}
+
+interface Entrenador {
+    nombre: string;
+    region: Region;
+    pokemon: Pokemon;
+    toString():string;
+}
+
+class ImplEntrenador implements Entrenador {
+    nombre: string;
+    region: Region;
+    pokemon: Pokemon;
+
+    constructor(nombre: string, region: Region, pokemon: Pokemon) {
+        this.nombre = nombre;
+        this.region = region;
+        this.pokemon = pokemon;
+    }
+
+    toString():string{
+        return `Entrenador ${this.nombre} con ${this.pokemon.toString()}`;
+    }
+}
+
+let pokemon1:Pokemon = new ImplPokemon("Pikachu","","eléctrico","normal");
+let entrenador1:Entrenador = new ImplEntrenador("Pepe", "Kanto", pokemon1);

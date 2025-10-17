@@ -159,3 +159,67 @@ function filtrar_categoria(cat) {
 let tamano = 'pequeño';
 let categoria = 'mamífero';
 mostrar_animales_filtrados(tamano, categoria);
+class ImplCliente {
+    constructor(nombre, direccion, correo) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.correo = correo;
+    }
+    toString() {
+        return `Cliente ${this.nombre} (${this.correo})`;
+    }
+}
+class ImplProducto11 {
+    constructor(nombre, categoria, cantidad, precioUnitario) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.cantidad = cantidad;
+        this.precioUnitario = cantidad;
+    }
+    toString() {
+        return `${this.nombre}(${this.cantidad} x ${this.precioUnitario}€)`;
+    }
+}
+class ImplPedido {
+    constructor(cliente, productos, fecha) {
+        this.cliente = cliente;
+        this.productos = productos;
+        this.fecha = fecha;
+    }
+    toString() {
+        return `Pedido de ${this.cliente.toString()}. Contiene: ${this.productos.map(p => p.toString()).join(', ')}`;
+    }
+}
+let clienteEjercicio10 = new ImplCliente("Anderson", "Plaza Espana N1", "anderolivosg@gmail.com");
+let productoEjercicio101 = new ImplProducto11("Raton", "ocio", 3, 20.2);
+let productoEjercicio102 = new ImplProducto11("Teclado", "ocio", 2, 60.8);
+let pedido10 = new ImplPedido(clienteEjercicio10, [productoEjercicio101, productoEjercicio102], Date.now());
+console.log(pedido10.toString());
+class ImplPokemon {
+    constructor(especie, apodo, tipo1, tipo2) {
+        if (apodo == "") {
+            this.apodo = especie;
+        }
+        else {
+            this.apodo = apodo;
+        }
+        this.especie = especie;
+        this.tipo1 = tipo1;
+        this.tipo2 = tipo2;
+    }
+    toString() {
+        return "Pokemon " + this.especie;
+    }
+}
+class ImplEntrenador {
+    constructor(nombre, region, pokemon) {
+        this.nombre = nombre;
+        this.region = region;
+        this.pokemon = pokemon;
+    }
+    toString() {
+        return `Entrenador ${this.nombre} con ${this.pokemon.toString()}`;
+    }
+}
+let pokemon1 = new ImplPokemon("Pikachu", "", "eléctrico", "normal");
+let entrenador1 = new ImplEntrenador("Pepe", "Kanto", pokemon1);
