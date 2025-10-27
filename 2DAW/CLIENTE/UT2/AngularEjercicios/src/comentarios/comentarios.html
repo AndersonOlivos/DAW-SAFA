@@ -1,0 +1,19 @@
+<div class="comentarios-container">
+  <h2>Comentarios</h2>
+
+  <input
+    type="text"
+    [(ngModel)]="nuevoComentario"
+    placeholder="Escribe un comentario..."
+  />
+
+  <button (click)="enviarComentario()">Enviar</button>
+
+  <ul>
+    @for(comentario of comentarios; track $index){
+      <li>
+        {{ comentario }}
+      </li>
+    }
+  </ul>
+</div>

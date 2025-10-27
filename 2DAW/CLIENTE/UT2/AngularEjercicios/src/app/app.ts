@@ -4,10 +4,11 @@ import {Ejercicio1} from '../ejercicio1/ejercicio1';
 import {Tiempo} from '../tiempo/tiempo';
 import {Ejercicio3} from '../ejercicio3/ejercicio3';
 import {Ejercicio4} from '../ejercicio4/ejercicio4';
+import {Ejercicio5} from '../ejercicio5/ejercicio5';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Ejercicio1, Tiempo, Ejercicio3, Ejercicio4],
+  imports: [RouterOutlet, Ejercicio1, Tiempo, Ejercicio3, Ejercicio4, Ejercicio5],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
