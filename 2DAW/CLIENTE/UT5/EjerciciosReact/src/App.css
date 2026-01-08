@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+input{
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+
+button{
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+  width: 100%;
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(245, 245, 245, 0.09);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.p-validar-correo{
+  background-color: rgba(230, 99, 99, 0.39);
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: small;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
