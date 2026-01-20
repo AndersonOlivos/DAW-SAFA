@@ -1,6 +1,0 @@
-Para la creacion de base de datos:
-El nombre de las tablas va en minuscula y en singular
-El id de la tabla se pone como "id" sin nada mas
-Si tiene una FK se pone como "id_usuario" (id_nobreDeLaOtraTabla)
-
-Si hay una relacion N:M y tiene atributos, se le crea SIEMPRE un id a esa tabla (ademas de sus FKs correspondientes)
