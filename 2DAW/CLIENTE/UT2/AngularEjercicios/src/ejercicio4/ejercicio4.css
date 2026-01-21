@@ -1,0 +1,34 @@
+#ejercicio4 {
+  margin-top: 1rem;
+  width: fit-content;
+  background-color: #5b8a5c;
+  color: white;
+  border-radius: 40px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1{
+  margin: 0;
+}
+
+#inpTemporizador{
+  outline: none;
+  font-size: xx-large;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  color: #5b8a5c;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.all-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.v-center{
+    align-items: center;
+}
+
+.h-center{
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+<div id="ejercicio3">
+  <h3>Ejercicio 3</h3>
+  <input type="text" [(ngModel)]="inpTarea" placeholder="Recargar bonobus...">
+  <button (click)="anadir_tarea()">Añadir</button>
+  <div class="tareas">
+    @for (tarea of tareas; track tarea){
+      <app-tarea [nombreTarea]="tarea"></app-tarea>
+    }
+  </div>
+</div>

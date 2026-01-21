@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: 100;
+    margin-left: 1rem;
+}
+
+/*ESTILO NAV*/
+
+nav{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 95vw;
+    height: 8rem;
+}
+
+/*ESTILO NAV LOGO*/
+
+#nav-container-logo{
+    width: 25%;
+    max-width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#nav-container-logo>img{
+    height: auto;
+}
+
+/*ESTILO NAV BARRA*/
+
+#nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #006998;
+    height: 4rem;
+    width: 75%;
+    color: white;
+    font-size: larger;
+}
+
+/*ESTILO MAIN*/
+
+main{
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/*ESTILO DEL MAIN COLUNA IZQUIERDA*/
+
+#main-img-ampa{
+    border: 10px solid #006998;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: 25rem;
+}
+
+#main-img-ampa>img{
+    width: auto;
+    height: 25rem;
+}
+
+/*ESTILO DEL MAIN COLUNA DERECHA*/
+
+.main-columna-bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    height: 25rem;
+}
+
+.columna-bienvenida{
+    color: #006998;
+    padding: 1rem;
+    border: 3px solid #006998;
+    border-radius: 2rem;
+    max-width: 25rem;
+}
+
+/*ESTILO DEL MAIN COLUNA DERECHA 1er DIV*/
+
+#bienvenido{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*ESTILO DEL MAIN COLUNA DERECHA 2do DIV*/
+
+#colegio{
+    font-size: xx-large;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

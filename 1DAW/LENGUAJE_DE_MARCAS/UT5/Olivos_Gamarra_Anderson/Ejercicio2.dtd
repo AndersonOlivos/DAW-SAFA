@@ -1,0 +1,22 @@
+<!ELEMENT piratas (pirata*)>
+
+<!ELEMENT pirata (datos_actor, peliculas, roles)>
+<!ATTLIST pirata nombre CDATA #REQUIRED>
+<!ATTLIST pirata imagen CDATA #IMPLIED>
+
+<!ELEMENT datos_actor (nombre, apellidos, sexo, nacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+
+<!ELEMENT peliculas (pelicula*)>
+<!ELEMENT pelicula (datos)>
+<!ELEMENT datos (titulo, saga)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT saga (#PCDATA)>
+
+<!ELEMENT roles (rol*)>
+<!ELEMENT rol (tipo_rol, barco)>
+<!ELEMENT tipo_rol (#PCDATA)>
+<!ELEMENT barco (#PCDATA)>

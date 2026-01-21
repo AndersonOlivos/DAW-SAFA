@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Cultural</title>
+
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/responsive.css">
+    <link rel="shortcut icon" href="../imagenes/logo3.png" type="image/x-icon">
+
+</head>
+<body class="column all-center">
+    
+    <header class="row v-center wrap">
+        <div class="logo">
+            <img src="../imagenes/logo3.png" alt="logo">
+        </div>
+        <div id="header-menu" class="row v-center wrap">
+            <a class="header-a" href="">Inicio</a>
+            <a class="header-a" href="">Line-up</a>
+            <a class="header-a" href="">Entradas</a>
+            <a class="header-a" href="#formulario">Contacto</a>
+        </div>
+        <div class="row v-center header-boton">
+            <button id="btn-header" class="row all-center">
+                Comprar entradas
+            </button>
+        </div>
+    </header>
+
+    <main class="row">
+
+        <nav class="column">
+            <div class="column gap1">
+                <p id="p-faq">FAQ</p>
+                <select name="FAQ" id="select-faq">
+                    <option>¿Qué pasaría si no puedo asistir al evento?</option>
+                    <option>¿Puedo comprar más de una entrada?</option>
+                    <option>¿Puedo solicitar más de una entrada?</option>
+                </select>
+            </div>
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/iconoLugar.png" alt="lugar">
+                <p>Rutas</p>
+            </div>
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/calendario.png" alt="calendario">
+                <p>Eventos de hoy</p>
+            </div>
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/agenda.png" alt="agenda">
+                <p>Agenda de actividades</p>
+            </div>
+        </nav>
+
+        <div id="contenedor-tarjetas" class="column gap2">
+            <section id="evento" class="column all-center gap2">
+                <img src="../imagenes/imagenfondomusica.jpg" alt="background-evento">
+                <h1>Festival Internacional de Música Electrónica 2024</h1>
+                <p>¡Vive la experiencia mñas electrizante del año!</p>
+                <button id="btn-descubre">Descubre más</button>
+            </section>
+            <section id="lineup" class="column all-center gap2">
+                <h2 class="titulos">Artistas destacados</h2>
+                <div id="div-lineup" class="row all-center gap1">
+                    <img src="../imagenes/dj1.jpg" alt="dj1">
+                    <img src="../imagenes/dj3.jpg" alt="dj3">
+                    <img src="../imagenes/dj4.jpg" alt="dj4">
+                </div>
+            </section>
+            <section id="cronograma" class="column all-center gap2">
+                <h2 class="titulos">Horarios del festival</h2>
+                <ol class="column h-center gap2">
+                    <li><b>Día 1:</b> Artista A (8:00 PM), Artista B (9:30 PM)</li>
+                    <li><b>Día 2:</b> Artista C (7:00 PM), Artista D (9:00 PM)</li>
+                </ol>
+            </section>
+            <section id="formulario" class="column all-center gap1">
+                <h2 class="titulos">Contáctanos</h2>
+                <form class="column all-center gap1">
+                    <label for="inp-nombre">Nombre</label>
+                    <input type="text" name="nombre" id="inp-nombre">
+                    <label for="inp-correo">Correo electrónico</label>
+                    <input type="mail" name="correo" id="inp-correo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <button id="btn-enviar">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+        <section id="noticias" class="column">
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/noticias.png" alt="noticias">
+                <p>Últimas noticias</p>
+            </div>
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/suscribirse.png" alt="suscribirse">
+                <p>Suscibirse a las novedades</p>
+            </div>
+            <div class="row all-center gap05">
+                <img class="small-icon" src="../imagenes/almacenamiento.png" alt="lugar">
+                <p>Aforo completado en este instante</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

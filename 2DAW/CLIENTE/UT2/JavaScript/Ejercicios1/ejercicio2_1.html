@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>Calcular área cuadrado</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+      <input style="width: fit-content;" id="num1" type="text" 
+      placeholder="Introduce el valor del lado" />
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+
+      let numero1 = document.getElementById("num1");
+
+      let calcularArea = (a) => {
+
+        let resultado = Number(a)*Number(a);
+
+        if (isNaN(resultado)) {
+          document.getElementById("resultado").innerText = "No definido";
+        } else {
+          document.getElementById("resultado").innerText = resultado + " m^2";
+        }
+      };
+
+      numero1.addEventListener("input", () => {
+        calcularArea(numero1.value);
+      });
+    </script>
+  </body>
+</html>

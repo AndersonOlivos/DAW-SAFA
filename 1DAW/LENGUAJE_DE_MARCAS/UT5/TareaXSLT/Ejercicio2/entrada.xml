@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="entrada.dtd" type="application/xml-dtd"?>
+<?xml-stylesheet href="entrada.xslt" type="text/xsl"?>
+<entrada>
+    <evento url_imagen_evento="https://filmsymphony.es/wp-content/uploads/2021/10/nueva-gira-fenix-cartel.jpg" 
+    url_imagen_barra="https://softmatic.com/images/Code%20128%20Maximum%20Length%20Letters.png">
+        <codigo>12114TG4314HJ13413</codigo>
+        <datos>
+            <nombre>FSO-GIRA FENIX</nombre>
+            <fecha>20/03/2022</fecha>
+            <lugar>Palacio de Congresos</lugar>
+            <ciudad>Sevilla</ciudad>
+            <precio>60,00€</precio>
+        </datos>
+    </evento>
+</entrada>

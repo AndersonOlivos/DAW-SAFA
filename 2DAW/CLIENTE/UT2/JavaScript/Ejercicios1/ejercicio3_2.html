@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>Calcular porcentajes de gasto</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+      <p>Precio gasolina</p>
+      <input
+        style="width: fit-content"
+        id="inpGasolina"
+        type="text"
+      />
+      <p>Precio hotel</p>
+      <input
+        style="width: fit-content"
+        id="inpHotel"
+        type="text"
+      />
+      <p>Precio restaurante</p>
+      <input
+        style="width: fit-content"
+        id="inpRestaurante"
+        type="text"
+      />
+      <button style="width: fit-content" onclick="calcularPorcentajes()">
+        Calcular
+      </button>
+      <p id="porcentajeGasolina"></p>
+      <p id="porcentajeHotel"></p>
+      <p id="porcentajeRestaurante"></p>
+    </div>
+
+    <script>
+      let calcularPorcentajes = () => {
+        
+        let gasolina = Number(document.getElementById("inpGasolina").value);
+        let hotel = Number(document.getElementById("inpHotel").value);
+        let restaurante = Number(document.getElementById("inpRestaurante").value);
+        
+        let total = gasolina + hotel + restaurante;
+
+        let pGasolina = ((gasolina / total) * 100).toFixed(2);
+        let pHotel = ((hotel / total) * 100).toFixed(2);
+        let pRestaurante = ((restaurante / total) * 100).toFixed(2);
+
+
+        document.getElementById('porcentajeGasolina').innerText = "Porcentaje gasolina: " + pGasolina + "%";
+        document.getElementById('porcentajeHotel').innerText = "Porcentaje hotel: " + pHotel + "%";
+        document.getElementById('porcentajeRestaurante').innerText = "Porcentaje restaurante: " + pRestaurante + "%";
+
+      };
+    </script>
+  </body>
+</html>

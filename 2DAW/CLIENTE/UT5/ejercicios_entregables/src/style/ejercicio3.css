@@ -1,0 +1,23 @@
+.inputFormulario{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 250px
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.resumen{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #2c2d30;
+    width: 270px;
+    justify-self: center
+}

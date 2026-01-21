@@ -1,0 +1,60 @@
+@media screen and (max-width: 1570px) {
+    #superglovo-carrito{
+        display: none;
+    }
+
+    nav,main{
+        width: 100%;
+        max-width: none;
+    }
+
+    main{
+        justify-content: center;
+    }
+
+    main>div{
+        width: 100% !important;
+    }
+
+    #main-superglovo{
+        justify-content: center;
+    }
+
+    #superglovo-container{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    #articulos-lomasvendido{
+        width: 86%;
+    }
+
+    .li-abrir{
+        gap: 0;
+    }
+
+    #superglovo-titulo{
+        padding: 2rem 1rem 2rem 2rem;
+    }
+
+    #superglovo-articulos{
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+    }
+    
+    #articulos-secciones{
+        display: none;
+    }
+
+    #articulos-lomasvendido{
+        width: 100%;
+    }
+
+    #lomasvendido-sindireccion{
+        font-size: small;
+    }
+
+}

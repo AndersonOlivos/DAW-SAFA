@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera Cine - DAW</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="icons/ticket.png" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body class="flex-column all-center">
+    <header class="flex-row">
+        <div class="flex-row all-center header-first-box">
+            <img class="header-icono" src="icons/ticket.png" alt="icono-ticket">
+            <h1>CINESA</h1>
+        </div>
+        <div class="flex-row header-second-box">
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Cines</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Películas</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Eventos</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Promos</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Cinesa Luxe</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">myCINESA</a>
+            </div>
+            <div class="flex-row all-center">
+                <a class="header-a" href="">Business</a>
+            </div>
+            <div class="exit-responsive">
+                <img src="icons/exit.png" alt="x">
+            </div>
+        </div>
+        <div class="menu-responsive">
+            <img src="icons/menu.png" alt="menu">
+        </div>
+    </header>
+    <main class="flex-column all-center">
+        <nav class="flex-row">
+            <div class="nav-categoria">
+                <p>ESTRENOS</p>
+            </div>
+            <div class="nav-categoria nav-categoria-activa">
+                <p>CARTELERA</p>
+            </div>
+            <div class="nav-categoria">
+                <p>PRÓXIMOS</p>
+            </div>
+            <div class="nav-categoria">
+                <p>IMAX</p>
+            </div>
+            <div class="nav-categoria">
+                <p>ISENSE</p>
+            </div>
+            <div class="nav-categoria">
+                <p>DOLBY CINEMA</p>
+            </div>
+            <div class="nav-categoria">
+                <p>SCREENX</p>
+            </div>
+            <div class="nav-categoria">
+                <p>WHATSCINE</p>
+            </div>
+            <div class="nav-categoria">
+                <p>INFANTIL</p>
+            </div>
+            <div class="nav-categoria">
+                <p>CICLOS</p>
+            </div>
+        </nav>
+
+        <div class="filtro flex-row text-small">
+            <p class="text-x-small">Ordenar por</p>
+            <div class="filtro-opcion"><p>TOP PELÍCULAS</p></div>
+            <div class="filtro-opcion filtro-opcion-activa"><p>A-Z</p></div>
+        </div>
+
+        <div class="peliculas flex-row">
+            <div class="pelicula flex-column">
+                <p class="pelicula-titulo">BITELCHUS</p>
+                <img class="pelicula-imagen" src="images/pelicula1.jpg" alt="deadpool">
+                <div class="pelicula-descripcion flex-row">
+                    <div class="pelicula-votacion flex-row all-center">
+                        <div class="pelicula-estrellas flex-row">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                        </div>
+                        <div class="pelicula-votos">
+                            <p class="votos">(90 votos)</p>
+                        </div>
+                    </div>
+                    <div class="flex-column all-center">
+                        <img class="share" src="icons/share.png" alt="Share">
+                    </div>
+                </div>
+            </div>
+            <div class="pelicula flex-column">
+                <p class="pelicula-titulo">EL SEÑOR DE LOS ANILLOS: EL RETORNO V.EXTENDIDA</p>
+                <img class="pelicula-imagen" src="images/pelicula2.jpg" alt="deadpool">
+                <div class="pelicula-descripcion flex-row">
+                    <div class="pelicula-votacion flex-row all-center">
+                        <div class="pelicula-estrellas flex-row">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                        </div>
+                        <div class="pelicula-votos">
+                            <p class="votos">(1222 votos)</p>
+                        </div>
+                    </div>
+                    <div class="flex-column all-center">
+                        <img class="share" src="icons/share.png" alt="Share">
+                    </div>
+                </div>
+            </div>
+            <div class="pelicula flex-column">
+                <p class="pelicula-titulo">EL SEÑOR DE LOS ANILLOS: LA COMUNIDAD V.EXTENDIDA</p>
+                <img class="pelicula-imagen" src="images/pelicula3.jpg" alt="deadpool">
+                <div class="pelicula-descripcion flex-row">
+                    <div class="pelicula-votacion flex-row all-center">
+                        <div class="pelicula-estrellas flex-row">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                        </div>
+                        <div class="pelicula-votos">
+                            <p class="votos">(123 votos)</p>
+                        </div>
+                    </div>
+                    <div class="flex-column all-center">
+                        <img class="share" src="icons/share.png" alt="Share">
+                    </div>
+                </div>
+            </div>
+            <div class="pelicula flex-column">
+                <p class="pelicula-titulo">GLADIATOR II</p>
+                <img class="pelicula-imagen" src="images/pelicula4.jpg" alt="deadpool">
+                <div class="pelicula-descripcion flex-row">
+                    <div class="pelicula-votacion flex-row all-center">
+                        <div class="pelicula-estrellas flex-row">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                        </div>
+                        <div class="pelicula-votos">
+                            <p class="votos">(523 votos)</p>
+                        </div>
+                    </div>
+                    <div class="flex-column all-center">
+                        <img class="share" src="icons/share.png" alt="Share">
+                    </div>
+                </div>
+            </div>
+            <div class="pelicula flex-column">
+                <p class="pelicula-titulo">GRU 4. MI VILLANO FAVORITO</p>
+                <img class="pelicula-imagen" src="images/pelicula5.jpg" alt="deadpool">
+                <div class="pelicula-descripcion flex-row">
+                    <div class="pelicula-votacion flex-row all-center">
+                        <div class="pelicula-estrellas flex-row">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star-filled.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                            <img class="pelicula-stars" src="icons/star.png" alt="star">
+                        </div>
+                        <div class="pelicula-votos">
+                            <p class="votos">(4 votos)</p>
+                        </div>
+                    </div>
+                    <div class="flex-column all-center">
+                        <img class="share" src="icons/share.png" alt="Share">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+<script src="menu-responsive.js"></script>
+</body>
+</html>

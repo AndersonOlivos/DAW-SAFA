@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="entrada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="evento">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo" />
+                            <xs:element name="datos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" />
+                                        <xs:element name="fecha" />
+                                        <xs:element name="lugar" />
+                                        <xs:element name="ciudad" />
+                                        <xs:element name="precio" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="url_imagen_evento" type="xs:string" />
+                        <xs:attribute name="url_imagen_barra" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

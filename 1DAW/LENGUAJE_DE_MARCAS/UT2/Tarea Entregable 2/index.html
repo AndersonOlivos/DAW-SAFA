@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Online</title>
+    <link rel="stylesheet" href="hotel.css">
+    <link rel="shortcut icon" href="star.png" type="image/x-icon">
+</head>
+<body>
+    <div id="father">
+        <form action="" method="post">        
+            <div id="title">
+                <img src="star.png" alt="star">
+                <h1> Mi Hotel - Reserva Online </h1>
+                <img src="star.png" alt="star">
+            </div>
+            <div class="container-questions">
+                <div class="questions">
+                    <label for="name">Nombre:</label>
+                    <input type="text">
+                </div>
+                <div class="questions">
+                    <label for="surname">Apellidos:</label>
+                    <input type="text">
+                </div>
+                <div class="questions">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel">
+                </div>
+                <div class="questions">
+                    <label for="email">Email:</label>
+                    <input type="email">
+                </div>
+                <div class="questions">
+                    <label for="cars">Nº coches:</label>
+                    <input type="text">
+                </div>
+                <div class="questions">
+                    <label for="d_entrance">Fecha entrada</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="">Tipo de habitación:</label>
+                    <div class="question-radio">
+                        <div>
+                            <input type="radio" name="habitacion" id="simple">
+                            <label class="no-bold" for="">Simple</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="habitacion" id="doble">
+                            <label class="no-bold" for="">Doble</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="habitacion" id="matrimonio">
+                            <label class="no-bold" for="">Matrimonio</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="">Extras:</label>
+                    <div class="question-radio">
+                        <div>
+                            <input type="checkbox" name="desayuno" id="desayuno">
+                            <label class="no-bold" for="">Desayuno</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="comida" id="comida">
+                            <label class="no-bold" for="">Comida</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cena" id="cena">
+                            <label class="no-bold" for="">Cena</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cama_supletoria" id="cama_supletoria">
+                            <label class="no-bold" for="">Cama supletoria</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentarios">
+                    <label for="">Comentarios:</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+            </div>
+            <div id="botones">
+                <button class="boton" id="boton-enviar" type="submit">Enviar</button>
+                <button class="boton" id="boton-borrar" type="reset">Borrar</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>

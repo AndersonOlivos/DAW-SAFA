@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>Descuento</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+      <input
+        style="width: fit-content"
+        id="inpPrecio"
+        type="text"
+        placeholder="Introduce el precio"
+      />
+      <input
+        style="width: fit-content"
+        id="inpDescuento"
+        type="text"
+        placeholder="Introduce el descuento (%)"
+      />
+      <button style="width: fit-content" onclick="calcularPrecios()">
+        Calcular
+      </button>
+      <p id="precioInicial"></p>
+      <p id="descuento"></p>
+      <p id="cantidadAhorrada"></p>
+      <p id="precioFinal"></p>
+    </div>
+
+    <script>
+      let calcularPrecios = () => {
+        
+        let precio = Number(document.getElementById("inpPrecio").value);
+        let descuento = Number(document.getElementById("inpDescuento").value);
+        
+        let cantidadAhorrada = precio * descuento / 100;
+        let precioFinal = precio - cantidadAhorrada;
+
+        document.getElementById('precioInicial').innerText = "Precio inicial: " + precio + "€";
+        document.getElementById('descuento').innerText = "Descuento: " + descuento + "%";
+        document.getElementById('cantidadAhorrada').innerText = "Cantidad ahorrada: " + cantidadAhorrada + "€";
+        document.getElementById('precioFinal').innerText = "Precio final: " + precioFinal + "€";
+
+        console.log(descuento)
+      };
+    </script>
+  </body>
+</html>

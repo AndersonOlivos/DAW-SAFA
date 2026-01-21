@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="817.0" spacing="20.0" styleClass="contenedor_principal" stylesheets="@../../../servicios.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4.TablaControlador">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="150.0" spacing="10.0">
+               <children>
+                  <Label text="FECHA INICIAL" />
+                  <DatePicker fx:id="inp_filtro_fecha_inicial" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="155.0" spacing="10.0">
+               <children>
+                  <Label text="CLIENTES" />
+                  <ComboBox fx:id="combo_tabla_clientes" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="144.0" spacing="10.0">
+               <children>
+                  <Label text="FECHA FINAL" />
+                  <DatePicker fx:id="inp_filtro_fecha_final" />
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#abrirVentanaAnadirServicio" styleClass="btn" text="Nuevo servicio" />
+         </children>
+      </HBox>
+      <TableView fx:id="tabla_servicios" maxWidth="-Infinity" prefHeight="304.0" prefWidth="1500.0">
+        <columns>
+          <TableColumn fx:id="col_matricula" prefWidth="113.0" text="MATRICULA" />
+          <TableColumn fx:id="col_marca" prefWidth="129.0" text="MARCA" />
+            <TableColumn fx:id="col_precio" prefWidth="124.0" text="PRECIO" />
+            <TableColumn fx:id="col_fecha_alquiler" prefWidth="146.0" text="FECHA ALQUILER" />
+            <TableColumn fx:id="col_fecha_entrega" prefWidth="163.0" text="FECHA ENTREGA" />
+            <TableColumn fx:id="col_total" prefWidth="140.0" text="TOTAL" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

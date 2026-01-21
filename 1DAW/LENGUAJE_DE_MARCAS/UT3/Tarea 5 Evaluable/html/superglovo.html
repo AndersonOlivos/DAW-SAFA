@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glovo - El Súper de Glovo</title>
+
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+
+    <!--FONT-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--STYLES-->
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/superglovo.css">
+    <link rel="stylesheet" href="../css/superglovo-responsive.css">
+
+
+</head>
+<body class="flex column v-center">
+    <div id="background-nav">
+        <img src="../imagenes/super/background.jpg" alt="">
+    </div>
+
+    <nav class="flex row v-center">
+        <div class="flex row all-center">
+            <svg id="nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 32" class="glovo-logo header-logo__brand" data-v-3cae43e0="" data-v-4ab15648=""><path fill="#ffffff" d="M0 20.944v-.062C0 14.947 4.527 9.917 10.894 9.917c3.169 0 5.28.758 7.211 2.152.363.273.755.787.755 1.514 0 1-.814 1.848-1.84 1.848-.483 0-.845-.211-1.147-.425-1.358-.998-2.836-1.666-5.13-1.666-3.892 0-6.85 3.424-6.85 7.482v.06c0 4.363 2.867 7.573 7.182 7.573 1.992 0 3.802-.636 5.1-1.605v-3.967H12.01c-.905 0-1.659-.698-1.659-1.606 0-.909.754-1.636 1.66-1.636h5.885c1.055 0 1.87.817 1.87 1.879v5.663c0 1.06-.422 1.818-1.298 2.363-1.811 1.212-4.346 2.302-7.513 2.302C4.345 31.848 0 27.123 0 20.944m23.093-9.905a1.8 1.8 0 0 1 1.81-1.818c1.026 0 1.842.818 1.842 1.818v18.78c0 1.03-.816 1.817-1.841 1.817a1.8 1.8 0 0 1-1.811-1.817v-18.78zm19.817 12.54v-.06c0-2.818-2.021-5.15-4.888-5.15-2.927 0-4.798 2.302-4.798 5.089v.06c0 2.787 2.022 5.119 4.858 5.119 2.957 0 4.828-2.302 4.828-5.058m-13.337 0v-.06c0-4.575 3.62-8.361 8.51-8.361 4.888 0 8.479 3.725 8.479 8.3v.06c0 4.544-3.621 8.33-8.54 8.33-4.86 0-8.449-3.725-8.449-8.269m26.105 8.209h-.18c-.997 0-1.661-.637-2.083-1.607l-5.31-12.206c-.092-.273-.212-.575-.212-.908 0-.91.815-1.757 1.81-1.757.996 0 1.51.574 1.811 1.333l4.104 10.6 4.164-10.66c.271-.636.755-1.273 1.72-1.273.996 0 1.78.757 1.78 1.757 0 .333-.12.697-.21.878L57.76 30.18c-.423.94-1.087 1.607-2.083 1.607m22.274-8.208v-.06c0-2.818-2.02-5.15-4.888-5.15-2.927 0-4.798 2.302-4.798 5.089v.06c0 2.787 2.022 5.119 4.86 5.119 2.955 0 4.826-2.302 4.826-5.058m-13.337 0v-.06c0-4.575 3.621-8.361 8.51-8.361 4.888 0 8.479 3.725 8.479 8.3v.06c0 4.544-3.62 8.33-8.54 8.33-4.858 0-8.449-3.725-8.449-8.269" class="glovo-logo__text--green" data-v-3cae43e0=""></path> <path fill="#ffffff" d="m90.661 9.961-.2.28-2.751 3.897-2.748-3.89-.201-.282a3.648 3.648 0 0 1 2.949-5.781 3.65 3.65 0 0 1 2.95 5.776M87.711.639c-3.956 0-7.171 3.23-7.171 7.199 0 1.511.468 2.962 1.351 4.195l.19.266 3.735 5.288s.455.747 1.448.747h.892c.995 0 1.448-.747 1.448-.747l3.732-5.289.19-.266a7.155 7.155 0 0 0 1.352-4.195c0-3.969-3.217-7.198-7.17-7.198M85.692 21.58v-.014c0-1.076.851-1.966 2-1.966 1.15 0 1.994.876 1.994 1.952v.014c0 1.067-.852 1.957-2.008 1.957-1.14 0-1.986-.875-1.986-1.943" class="glovo-logo__balloon--yellow" data-v-3cae43e0=""></path></svg>
+        </div>
+
+        <div class="flex row all-center">
+            <button id="btn-nav-empezar" class="flex row all-center btn-green">Empezar</button>
+        </div>
+    </nav>
+
+    <main class="flex column">
+        <div id="main-ubicacion" class="flex row h-center">
+            <p><u>Sevilla</u> <span>&gt;</span> <u><a class="no-decoration" href="index.html">Supermercado</a></u> <span>&gt;</span> <b>El Súper de Glovo</b></p>
+        </div>
+        <div id="main-superglovo" class="flex row">
+            <div id="superglovo-container" class="flex column">
+                <div id="superglovo-titulo" class="flex column v-center">
+                    <h1>El Súper de Glovo</h1>
+                    <div class="flex row v-center">
+                        <div class="flex row v-center titulo-descripcion-boxes">
+                            <img class="titulo-icon" src="../imagenes/bici.png" alt="transporte">
+                            <s>1,79 €</s>
+                            <p class="gratis">GRATIS</p>
+                        </div>
+
+                        <div class="flex row v-center titulo-descripcion-boxes">
+                            <img class="titulo-icon" src="../imagenes/prime.png" alt="prime">
+                            <p>Prime</p>
+                        </div>
+
+                        <div class="flex row v-center titulo-descripcion-boxes">
+                            <img class="titulo-icon" src="../imagenes/like-green.png" alt="muy-bueno">
+                            <p>94%</p>
+                            <p class="muy-bueno">Muy bueno</p>
+                        </div>
+                    </div>
+                    <p>Te entregamos la compra del súper, ¡en minutos!</p>
+                </div>
+
+                <div id="superglovo-articulos" class="flex row">
+                    <div id="articulos-secciones" class="flex column">
+                        <div class="flex row v-center">
+                            <img src="../imagenes/secciones-icon.svg" alt="secciones-icon">
+                            <p id="secciones-titulo">Secciones</p>
+                        </div>
+                        <ul class="flex column">
+                            <li>Lo más vendido</li>
+                            <li class="flex row v-center li-abrir">Descuentos <img src="../imagenes/flecha-abajo.svg" alt="abrir-contenido"></li>
+                            <li class="flex row v-center li-abrir">Destacados <img src="../imagenes/flecha-abajo.svg" alt="abrir-contenido"></li>
+                            <li class="flex row v-center li-abrir">Bebidas <img src="../imagenes/flecha-abajo.svg" alt="abrir-contenido"></li>
+                            <li class="flex row v-center li-abrir">Bebidas Alcohólicas <img src="../imagenes/flecha-abajo.svg" alt="abrir-contenido"></li>
+                        </ul>
+                    </div>
+
+                    <div id="articulos-lomasvendido" class="flex column">
+                        <div id="lomasvendido-buscador" class="flex row v-center">
+                            <img src="../imagenes/search.png" alt="buscar">
+                            <input id="inp_buscar_superglovo" type="text" placeholder="Buscar en El Súper de Glovo">
+                        </div>
+                        
+                        <div id="lomasvendido-sindireccion" class="flex row v-center">
+                            <img src="../imagenes/no-location.svg" alt="no-location">
+                            <div>
+                                <p>Sin tu dirección, <b>no podemos comprobar si este establecimiento realiza entregas en tu zona.</b></p>
+                                <a class="clicaqui" href="">Haz clic aquí para añadir tu dirección</a>
+                            </div>
+                        </div>
+
+                        <div id="lomasvendido" class="flex column">
+                            <div id="lomasvendido-cabecera" class="flex row">
+                                <div class="flex row v-center">
+                                    <img id="lomasvendido-icon" src="../imagenes/trofeo.png" alt="trofeo">
+                                    <p id="lomasvendido-titulo">Lo más vendido</p>
+                                </div>
+                                <div class="btn-grey flex row all-center">
+                                    <img src="../imagenes/flecha-derecha.svg" alt="Ir">
+                                </div>
+                            </div>
+
+                            <div id="lomasvendido-sections" class="flex row">
+                                <div class="flex row">
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/cocacolazero.avif" alt="">
+                                            <div class="flex column all-center pack-ahorro">
+                                                <p>PACK <span>AHORRO</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Pack 8x Coca -Cola Zero Azúcar Latas</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">7,92€</p>
+                                                <p class="articulo-antiguo-precio"><s>13,99€</s></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/pack-estrella-galicia.avif" alt="">
+                                            <div class="flex column all-center pack-ahorro">
+                                                <p>PACK <span>AHORRO</span></p>
+                                            </div>
+                                            <div class="flex column all-center articulo-frio">
+                                                <img src="../imagenes/frio.png" alt="frio">
+                                            </div>
+
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Pack 6x Estrella Galicia Cerveza...</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">5,49€</p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/benandjerrys-blanco.avif" alt="">
+                                        
+                                            <div class="flex column all-center articulo-descuento">
+                                                <p>-10%</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Ben&Jerry's Helado Cookie Dough...</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">8,24€</p>
+                                                <p class="articulo-antiguo-precio"><s>9,15€</s></p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/benandjerrys-oscuro.avif" alt="">
+                                            <div class="flex column all-center articulo-descuento">
+                                                <p>-10%</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Ben&Jerry's Helado Chocolate Fudge...</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">8,24€</p>
+                                                <p class="articulo-antiguo-precio"><s>9,15€</s></p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/foxy.avif" alt="Foxy Seda 4+2u">
+                                            <div class="flex column all-center articulo-descuento">
+                                                <p>-5%</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Foxy Seda 4+2u</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">4,17€</p>
+                                                <p class="articulo-antiguo-precio"><s>4,39€</s></p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/pizza4quesos.avif" alt="Casa Tarradellas Pizza 4 Quesos">
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Casa Tarradellas Pizza 4 Quesos</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">3,85€</p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="flex column articulo">
+                                        <div class="articulo-div-img">
+                                            <img class="articulo-img" src="../imagenes/super/donuts.avif" alt="Donuts Bombón">
+                                            <div class="flex column all-center articulo-descuento">
+                                                <p>-5%</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex column articulo-descripcion">
+                                            <p class="articulo-nombre">Donuts Bombón 4x55g</p>
+                                            <div class="flex row v-center articulo-precios">
+                                                <p class="articulo-nuevo-precio">3,53€</p>
+                                                <p class="articulo-antiguo-precio"><s>3,75€</s></p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div> 
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="superglovo-carrito" class="flex column h-center">
+                <div id="carrito-tuglovo" class="flex column v-center">
+                    <h2>Tu glovo</h2>
+                    <img src="../imagenes/astronauta.svg" alt="astronauta">
+                    <p>Todavía no has añadido ningún producto. Cuando lo hagas, ¡verás los productos aquí!</p>
+                </div>
+                <div id="carrito-llega" class="flex row h-center">
+                    <img src="../imagenes/info.svg" alt="info">
+                    <p>¡Llega a <b>15,00 €</b> para no pagar el recargo de <b>3,49 €</b>!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h1>EJERCICIO 2</h1>
+<div class="opciones">
+  <label for="cantidad">Cantidad de números a generar:</label>
+  <input id="cantidad" type="number" [(ngModel)]="cantidad" min="1" />
+  <button (click)="generarNumeros()">GENERAR</button>
+</div>
+
+
+@if (numeros.length > 0){
+  <div>
+    <h3>Números generados</h3>
+    <ul>
+      @for (numero of numeros; track numero){
+        <li>{{numero}}</li>
+      }
+    </ul>
+  </div>
+}
+

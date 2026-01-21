@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>¿La suma es positiva o negativa?</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+      <input style="width:fit-content" id="num1" type="text" placeholder="Introduce un número" />
+      <input style="width:fit-content" id="num2" type="text" placeholder="Introduce un número" />
+      <button style="width: fit-content;" onclick="preguntar()">Preguntar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+
+      let preguntar = () => {
+        let numero1 = Number(document.getElementById("num1").value);
+        let numero2 = Number(document.getElementById("num2").value);
+        if(numero1+numero2 >= 0){
+          document.getElementById('resultado').innerText="Es positivo";
+        } else {
+          document.getElementById('resultado').innerText="Es negativo";
+        }
+      }
+      
+    </script>
+  </body>
+</html>

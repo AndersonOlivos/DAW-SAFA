@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2 Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <h2>Calcular multiplicación</h2>
+    <div style="display: flex; flex-direction: row; gap: 1rem">
+      <input id="num1" type="text" placeholder="Introduce un número" />
+      <p>+</p>
+      <input id="num2" type="text" placeholder="Introduce un número" />
+      <p>=</p>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      let numero1 = document.getElementById("num1");
+      let numero2 = document.getElementById("num2");
+
+      let calcularSuma = (a, b) => {
+        let resultado = Number(a) * Number(b);
+        if (isNaN(resultado)) {
+          document.getElementById("resultado").innerText = "No definido";
+        } else {
+          document.getElementById("resultado").innerText = resultado;
+        }
+      };
+
+      numero1.addEventListener("input", () => {
+        console.log(numero1.value);
+        calcularSuma(numero1.value, numero2.value);
+      });
+      numero2.addEventListener("input", () => {
+        console.log(numero2.value);
+        calcularSuma(numero1.value, numero2.value);
+      });
+    </script>
+  </body>
+</html>

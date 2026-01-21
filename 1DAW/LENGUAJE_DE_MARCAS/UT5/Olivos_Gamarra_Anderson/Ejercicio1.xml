@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Ejercicio2.dtd" type="application/xml-dtd"?>
+<?xml-model href="Ejercicio3.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="Ejercicio4.xslt" type="text/xsl"?>
+
+<piratas>
+    <pirata nombre="Jack Sparrow" imagen="https://i0.wp.com/img-tomatazos.buscafs.com/460837/460837.jpg">
+        <datos_actor>
+            <nombre>Johnny</nombre>
+            <apellidos>Deep</apellidos>
+            <sexo>M</sexo>
+            <nacimiento>09-06-1963</nacimiento>
+        </datos_actor>
+        <peliculas>
+            <pelicula>
+                <datos>
+                    <titulo>La maldición de la perla negra</titulo>
+                    <saga>Piratas del Caribe</saga>
+                </datos>
+            </pelicula>
+        </peliculas>
+        <roles>
+            <rol>
+                <tipo_rol>CAPITÁN</tipo_rol>
+                <barco>La Perla Negra</barco>
+            </rol>
+        </roles>
+    </pirata>
+</piratas>
