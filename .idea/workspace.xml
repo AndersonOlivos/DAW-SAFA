@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d633193-6c06-4227-8a39-52fbdf0046d3" name="Changes" comment="" />
+    <list default="true" id="5d633193-6c06-4227-8a39-52fbdf0046d3" name="Changes" comment="Ignorando subproyecto" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +16,12 @@
     &quot;assignee&quot;: &quot;AndersonOlivos&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AndersonOlivos/DAW-SAFA.git&quot;,
-    &quot;accountId&quot;: &quot;b4d99c15-780d-4b94-adfb-135cc083ac4d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AndersonOlivos/proyectoSymfony.git",
+    "accountId": "b4d99c15-780d-4b94-adfb-135cc083ac4d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -106,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768867918241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ignorando subproyecto">
+      <option name="closed" value="true" />
+      <created>1769024944044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769024944044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
     <MESSAGE value="Ejercicios React" />
     <MESSAGE value="ejercicios cliente" />
     <MESSAGE value="gitignores" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignores" />
+    <MESSAGE value="Ignorando subproyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignorando subproyecto" />
   </component>
 </project>

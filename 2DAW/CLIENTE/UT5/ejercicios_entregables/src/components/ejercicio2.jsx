@@ -4,9 +4,11 @@ const Ejercicio2 = () => {
     const [logs, setLogs] = useState("");
     const [stopPropagation, setStopPropagation] = useState(false);
 
+
     const addLog = elemento => {
         setLogs(prev => prev + `${elemento}\n`);
     };
+
 
     const handleButtonClick = e => {
         if (stopPropagation) {
@@ -14,6 +16,7 @@ const Ejercicio2 = () => {
         }
         addLog("botón");
     };
+
 
     return (
         <div>
@@ -29,23 +32,23 @@ const Ejercicio2 = () => {
             </label>
 
             <div
-                style={{ padding: "20px", border: "2px solid white", marginTop: "20px" }}
+                style={{padding: "20px", border: "2px solid white", marginTop: "20px"}}
                 onClick={() => addLog("contenedor")}
             >
                 Contenedor
                 <div
-                    style={{ padding: "20px", border: "2px solid gray", marginTop: "10px" }}
+                    style={{padding: "20px", border: "2px solid gray", marginTop: "10px"}}
                     onClick={() => addLog("subcontenedor")}
                 >
                     Subcontenedor
-                    <br /><br />
+                    <br/><br/>
                     <button onClick={handleButtonClick}>
                         Botón
                     </button>
                 </div>
             </div>
 
-            <br />
+            <br/>
 
             <textarea
                 value={logs}

@@ -2,24 +2,27 @@ import React, {useState} from 'react';
 import '../style/ejercicio3.css'
 
 const Ejercicio3 = () => {
-    const [form, setForm] = useState({ nombre: "", email: "", edad: "" });
+    const [form, setForm] = useState({nombre: "", email: "", edad: ""});
     const [errors, setErrors] = useState({});
     const [touched, setTouched] = useState({});
     const [resumen, setresumen] = useState(null);
 
     const palabrasMinusculas = ["de", "del", "la", "las", "los"];
 
+
     const handleBlur = e => {
-        const { name } = e.target;
-        setTouched(prev => ({ ...prev, [name]: true }));
+        const {name} = e.target;
+        setTouched(prev => ({...prev, [name]: true}));
         validarCampo(name, form[name]);
     };
 
+
     const handleChange = e => {
-        const { name, value } = e.target;
-        setForm(prev => ({ ...prev, [name]: value }));
+        const {name, value} = e.target;
+        setForm(prev => ({...prev, [name]: value}));
         if (touched[name]) validarCampo(name, value);
     };
+
 
     const validarCampo = (name, value) => {
         let error = "";
@@ -52,9 +55,10 @@ const Ejercicio3 = () => {
                 }
             }
         }
-        setErrors(prev => ({ ...prev, [name]: error }));
+        setErrors(prev => ({...prev, [name]: error}));
         return error === "";
     };
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -66,6 +70,7 @@ const Ejercicio3 = () => {
         });
         if (valid) setresumen(form);
     };
+
 
     return (
         <div>
@@ -110,7 +115,7 @@ const Ejercicio3 = () => {
                     {errors.edad && touched.edad && <div className="error">{errors.edad}</div>}
                 </div>
 
-                <button type="submit" style={{ padding: "5px 15px", borderRadius: "5px" }}>Enviar</button>
+                <button type="submit" style={{padding: "5px 15px", borderRadius: "5px"}}>Enviar</button>
             </form>
 
             {resumen && (
