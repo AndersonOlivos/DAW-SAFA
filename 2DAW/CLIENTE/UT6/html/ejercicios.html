@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body{
+            background: #1b1b20;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        #imagen-meme{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <p>Esto es el encabezado</p>
+</header>
+<main>
+    <h1>¡Hola! Ahora mismo te encuentras en el main</h1>
+    <div id="div-buenas-noches">
+        <p>Muy buenas noches</p>
+    </div>
+</main>
+<section>
+    <h4>Esto es una sección</h4>
+    <img id="imagen-meme" src="https://i.programmerhumor.io/2024/12/programmerhumor-io-frontend-memes-backend-memes-e683def16d7fd6c.jpeg" alt="meme">
+</section>
+<div>
+    <h3>Elementos recorridos</h3>
+    <ul id="lista-elementos-recorridos"></ul>
+</div>
+
+<script>
+    let dom = document.documentElement;
+
+    let divBuenasNoches = document.getElementById('div-buenas-noches');
+
+
+
+    let listaDesordenada = document.getElementById('lista-elementos-recorridos');
+
+    let li = document.createElement('li');
+    li.innerHTML = `<b>Nombre:</b> ${dom.nodeName}, <b>Tipo de nodo:</b> ${dom.nodeType}, <b>Idioma del elemento:</b> ${dom.lang}`;
+    listaDesordenada.appendChild(li);
+    li.innerHTML = `<b>Nombre:</b> ${divBuenasNoches.nodeName}, <b>Tipo de nodo:</b> ${divBuenasNoches.nodeType}, <b>Idioma del elemento:</b> ${divBuenasNoches.clientWidth}`;
+</script>
+</body>
+</html>
