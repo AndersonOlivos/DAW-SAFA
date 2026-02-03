@@ -19,7 +19,42 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem;
-            text-align: center;
+        }
+
+        li{
+            margin: 1.5rem;
+        }
+
+        form{
+            background-color: whitesmoke;
+            padding: 1rem;
+            border-radius: 10px;
+            color: #1b1b20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            border: none;
+            border-radius: 7px;
+            padding: 0.25rem 1rem;
+            cursor: pointer;
+            margin: 1rem;
+        }
+
+        form button{
+            background-color: #1b1b20;
+            color: white;
+        }
+
+        form button:hover{
+            background-color: #4c4c5c;
+        }
+
+        .div-password{
+         margin-bottom: 1rem;
         }
 
         #imagen-meme{
@@ -37,28 +72,151 @@
         <p>Muy buenas noches</p>
     </div>
 </main>
-<section>
+<section class="secciones">
     <h4>Esto es una sección</h4>
     <img id="imagen-meme" src="https://i.programmerhumor.io/2024/12/programmerhumor-io-frontend-memes-backend-memes-e683def16d7fd6c.jpeg" alt="meme">
+</section>
+<section class="secciones">
+    <h4>Esta es otra sección</h4>
 </section>
 <div>
     <h3>Elementos recorridos</h3>
     <ul id="lista-elementos-recorridos"></ul>
 </div>
 
+<div id="div-botones">
+    <button id="boton1">GetElementById</button>
+    <button id="boton2">getElementsByClassName</button>
+    <button id="boton3">querySelector</button>
+</div>
+
+<form>
+    <h2>EJERCICIO 3</h2>
+    <div class="div-password">
+        <input id="inp-contrasena" type="text" placeholder="*****" name="contrasena">
+        <button type="button" id="boton-ocultar-mostrar">Ocultar/Mostrar</button>
+    </div>
+
+    <button type="submit">Enviar</button>
+    <p id="estado-formulario"></p>
+</form>
+<div>
+    <h2>EJERCICIO 4</h2>
+    <p id="texto-obsoleto"></p>
+    <button onclick="ejercicio4_obsoleto()">Acciones obsoletas</button>
+    <p id="texto-actualizada"></p>
+    <button id="boton-actualizada">Acciones actualizadas</button>
+</div>
+
 <script>
-    let dom = document.documentElement;
 
-    let divBuenasNoches = document.getElementById('div-buenas-noches');
+    //EJERCICIO 1
+    function ejercicio1(){
 
 
+        let listaDesordenada = document.getElementById('lista-elementos-recorridos');
 
-    let listaDesordenada = document.getElementById('lista-elementos-recorridos');
 
-    let li = document.createElement('li');
-    li.innerHTML = `<b>Nombre:</b> ${dom.nodeName}, <b>Tipo de nodo:</b> ${dom.nodeType}, <b>Idioma del elemento:</b> ${dom.lang}`;
-    listaDesordenada.appendChild(li);
-    li.innerHTML = `<b>Nombre:</b> ${divBuenasNoches.nodeName}, <b>Tipo de nodo:</b> ${divBuenasNoches.nodeType}, <b>Idioma del elemento:</b> ${divBuenasNoches.clientWidth}`;
+        //Nodo raiz
+        let dom = document.documentElement;
+        let liNodoRaiz = document.createElement('li');
+        liNodoRaiz.innerHTML = `<b>Nombre nodo:</b> ${dom.nodeName} --- <b>Tipo nodo:</b> ${dom.nodeType} --- <b>Idioma elemento:</b> ${dom.lang}`;
+        listaDesordenada.appendChild(liNodoRaiz);
+
+        //Nodo padre e hijo
+        let divBuenasNoches = document.getElementById('div-buenas-noches');
+        let liNodoPadreEHijo = document.createElement('li');
+        liNodoPadreEHijo.innerHTML = `<b>Nombre nodo:</b> ${divBuenasNoches.nodeName} --- <b>Tipo nodo:</b> ${divBuenasNoches.nodeType} --- <b>ClientWidth elemento:</b> ${divBuenasNoches.clientWidth}`;
+        listaDesordenada.appendChild(liNodoPadreEHijo);
+
+        let ul = document.createElement('ul');
+        let liNodoPadre = document.createElement('li');
+        liNodoPadre.innerHTML = `<b>NODO PADRE -> Nombre nodo:</b> ${divBuenasNoches.parentNode.nodeName} --- <b>Tipo nodo:</b> ${divBuenasNoches.parentNode.nodeType} --- <b>Elemento tiene hijos:</b> ${divBuenasNoches.parentNode.hasChildNodes()}`;
+        let liNodoHijo = document.createElement('li');
+        liNodoHijo.innerHTML = `<b>NODO HIJO -> Nombre nodo:</b> ${divBuenasNoches.firstElementChild.nodeName} --- <b>Tipo nodo:</b> ${divBuenasNoches.firstElementChild.nodeType} --- <b>Elemento tiene hijos:</b> ${divBuenasNoches.firstElementChild.hasChildNodes()}`;
+        ul.appendChild(liNodoPadre);
+        ul.appendChild(liNodoHijo);
+        listaDesordenada.appendChild(ul);
+
+        //Nodo de texto
+        let pNodoTexto = document.getElementsByTagName('p')[0].firstChild;
+        let liNodoTexto = document.createElement('li');
+        liNodoTexto.innerHTML = `<b>Nombre nodo:</b> ${pNodoTexto.nodeName} --- <b>Tipo nodo:</b> ${pNodoTexto.nodeType} --- <b>Contenido elemento:</b> "${pNodoTexto.textContent}"`;
+        listaDesordenada.appendChild(liNodoTexto);
+
+    }
+
+    //EJERCICIO 2
+
+    document.getElementById('boton1').addEventListener('click', ejercicio2_1);
+    document.getElementById('boton2').addEventListener('click', ejercicio2_2);
+    document.getElementById('boton3').addEventListener('click', ejercicio2_3);
+
+    function ejercicio2_1(){
+        let divBuenasNoches = document.getElementById('div-buenas-noches');
+        divBuenasNoches.firstElementChild.style.color = "yellow";
+    }
+    function ejercicio2_2(){
+        let secciones = document.getElementsByClassName('secciones');
+        Array.from(secciones).forEach((seccion, index) => {
+            let parrafo = document.createElement('p');
+            parrafo.innerText = "Seccion " + (index + 1);
+            seccion.appendChild(parrafo);
+        })
+    }
+    function ejercicio2_3(){
+        let boton = document.querySelector('#div-botones>button');
+        boton.style.backgroundColor = 'red';
+    }
+
+    //EJERCICIO 3
+    function ejercicio3_1() {
+
+        let boton = document.getElementById("boton-ocultar-mostrar");
+        boton.addEventListener("click", (evt) => {
+            evt.preventDefault();
+            let contrasena = document.getElementById('inp-contrasena');
+            contrasena.type === "password" ? contrasena.type = "text" : contrasena.type = "password";
+        })
+
+    }
+    function ejercicio3_2(){
+        let form = document.forms[0];
+
+        form.addEventListener("submit", (evt) => {
+            evt.preventDefault();
+            let contrasena = form['contrasena'];
+
+            let estado = document.querySelector('#estado-formulario');
+            estado.innerText = "Contraseña actualizada a: " + contrasena.value;
+        })
+
+    }
+
+    //EJERCICIO 4
+    // Parte Obsoleta
+    // Al usar onclick en el html esta función debe ser global.
+    // innerText es "no estándar" original de IE, provoca reflows (es más lento) y respeta estilos CSS.
+    function ejercicio4_obsoleto(){
+        document.getElementById('texto-obsoleto').innerText='¡Texto creado usando innerText y Eventos Inline! ESTO ESTÁ OBSOLETO'
+    }
+
+    // Parte Actualizada
+    // Separamos js del html con addEventListener.
+    // textContent es el estándar W3C, es más rápido y obtiene el texto puro sin importar estilos.
+    function ejercicio4_actualizada(){
+        let boton = document.querySelector('#boton-actualizada');
+        boton.addEventListener("click", () => {
+            document.getElementById('texto-actualizada').textContent='¡Texto creado usando textContent y Event Listener! ESTO ES CORRECTO'
+        })
+    }
+
+
+    ejercicio1();
+    ejercicio3_1();
+    ejercicio3_2();
+    ejercicio4_actualizada()
+
 </script>
 </body>
 </html>
