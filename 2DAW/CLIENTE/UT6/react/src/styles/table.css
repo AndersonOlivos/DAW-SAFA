@@ -1,0 +1,89 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-surface);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+thead {
+    background-color: #18181b;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    padding: 1rem;
+    text-align: left;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+td button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+td button:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+td button:nth-child(2):hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.colocador{
+    background-color: #302653;
+}
+
+.opuesto{
+    background-color: #5a2d0d;
+}
+
+.receptor{
+    background-color: #275a0d;
+}
+
+.central{
+    background-color: #0d5a4e;
+}
+
+.líbero{
+    background-color: #213b43;
+}
+
+.boton-ordenar-dorsal{
+    margin-left: 0.5rem;
+    cursor: pointer;
+}

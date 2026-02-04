@@ -1,0 +1,77 @@
+form {
+    background-color: var(--bg-surface);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+label {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: -0.5rem;
+}
+
+input, select {
+    background-color: var(--bg-input) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+form div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+form button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: var(--accent-hover);
+}
+
+form button[onClick*="cancelar"] {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+form button[onClick*="cancelar"]:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-secondary);
+}
+
+.error{
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgba(211, 40, 46, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}

@@ -1,21 +1,46 @@
 import React from 'react';
+import {useState} from "react";
+import "../styles/table.css";
 
-const PlayerTable = ({jugadores, handleEditarJugador, handleEliminarJugador}) => {
+
+const PlayerTable = ({jugadores,ordenarJugadores, handleEditarJugador, handleEliminarJugador}) => {
+
+    const flechaArriba = "↑";
+    const flechaAbajo = "↓";
+
+    const [flecha, setFlecha] = useState(flechaAbajo);
+
+    const ordenarDorsal = () => {
+        if (flecha === flechaAbajo) {
+            setFlecha(flechaArriba);
+            ordenarJugadores(false);
+
+        } else {
+            setFlecha(flechaAbajo);
+            ordenarJugadores(true);
+        }
+    }
 
     return (
         <table>
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Dorsal</th>
+                    <th>Dorsal
+                        <button
+                            className="boton-ordenar-dorsal"
+                            onClick={ordenarDorsal}
+                            title={flecha === flechaAbajo ? "Orden descendente" : "Orden ascendente"}
+                        >{flecha}</button>
+                    </th>
                     <th>Posición</th>
-                    <th>Altura</th>
+                    <th>Altura (cm)</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
             {jugadores.map(jugador => (
-                <tr key={jugador.id}>
+                <tr key={jugador.id} className={jugador.posicion.toLowerCase()}>
                     <td>{jugador.nombre}</td>
                     <td>{jugador.dorsal}</td>
                     <td>{jugador.posicion}</td>
