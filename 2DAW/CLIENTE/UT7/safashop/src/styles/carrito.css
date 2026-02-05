@@ -1,0 +1,25 @@
+.carrito{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 97, 146, 0.84);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.close-carrito{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    text-align: end;
+    cursor: pointer;
+}
