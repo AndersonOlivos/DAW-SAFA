@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import carrito from "../assets/carrito.png"
+import React from 'react';
 import "../styles/home.css";
-import {useProductos} from "../hooks/useProductos.jsx";
-import {Link} from "react-router-dom";
+import { useProductos } from "../hooks/useProductos.jsx";
 import Navbar from "../components/navbar.jsx";
+// 1. Importamos el nuevo componente
+import Producto from "../components/Producto.jsx";
 
 const Productos = () => {
-
     const { productos, cargando, error } = useProductos();
 
     return (
@@ -15,32 +14,17 @@ const Productos = () => {
 
             <main className="nuestros-productos-seccion">
                 <div className="container">
-                    <h2 className="section-heading">Nuestro productos</h2>
+                    <h2 className="section-heading">Nuestros productos</h2>
 
                     {cargando && <p style={{textAlign: 'center', color: '#777'}}>Cargando...</p>}
                     {error && <p style={{textAlign: 'center', color: 'red'}}>Error</p>}
 
                     {!cargando && !error && (
-                        <>
-                            <div className="minimal-product-grid">
-                                {productos.map((producto) => (
-                                    <div key={producto.asin} className="min-product-card">
-                                        <div className="min-card-image">
-                                            <img
-                                                src={producto.imgUrl}
-                                                alt={producto.title}
-                                                onError={(e) => e.target.src = 'https://placehold.co/300x300/f5f5f5/999999?text=No+Image'}
-                                            />
-                                        </div>
-                                        <div className="min-card-info">
-                                            <h3 className="min-product-title" title={producto.title}>{producto.title}</h3>
-                                            <div className="stars">{producto.stars}★</div>
-                                            <div className="min-price">{producto.price}€</div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </>
+                        <div className="minimal-product-grid">
+                            {productos.map((producto) => (
+                                <Producto key={producto.asin} producto={producto} />
+                            ))}
+                        </div>
                     )}
                 </div>
             </main>

@@ -3,10 +3,13 @@ import "../styles/home.css"
 import {Link} from "react-router-dom";
 import iconoCarrito from "../assets/carrito.png";
 import Carrito from "./carrito.jsx";
+import {useCart} from "../context/CartContext.jsx";
 
 const Navbar = () => {
 
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
+
+    const {cart} = useCart();
 
     const toggleCarrito = () => {
         setMostrarCarrito(!mostrarCarrito);
@@ -42,7 +45,7 @@ const Navbar = () => {
                 <div className="header-icons">
                     <button className="cart-icon" onClick={()=>setMostrarCarrito(!mostrarCarrito)}>
                         <img src={iconoCarrito} alt="carrito"/>
-                        <span className="cart-count">0</span>
+                        <span className="cart-count">{cart.length}</span>
                     </button>
                 </div>
             </div>

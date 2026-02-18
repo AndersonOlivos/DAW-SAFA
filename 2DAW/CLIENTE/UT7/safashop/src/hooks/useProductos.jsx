@@ -13,7 +13,5 @@ export function useProductos() {
             .finally(() => setCargando(false));
     }, []);
 
-    console.log(productos)
-
     return { productos, cargando, error };
 }
